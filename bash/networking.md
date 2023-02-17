@@ -34,13 +34,11 @@ nmap 10.133.0.*
 # This includes setting static IP, gateway, netmask, etc.
 # for each network adapter.
 sudo vim /etc/network/interfaces
-
 # Add any of the following lines under
 # the relevant adapter(s) as needed.
 address 192.168.1.58 # static client IP
 netmask 255.255.255.0 # static netmask
 gateway 192.168.1.1 # static gateway
-
 # Apply changes.
 sudo systemctl restart networking
 ```
@@ -71,7 +69,6 @@ sudo vim /etc/systemd/resolved.conf
 	# Edit the following lines:
 		DNS=1.1.1.2
 		FallbackDNS=1.0.0.2
-
 # Apply DNS changes.
 service systemd-resolved restart
 ```
