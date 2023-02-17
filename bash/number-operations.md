@@ -24,10 +24,10 @@ echo print 1/3. | python2
 floatVal=$((multVal / 1000))"."$((multVal % 1000))
 	# floatVal = actual floating point number, like 173.45
 	# multVal = integer version, floatVal multiplied by 1000, like 173450
+# Floating point math example:
+a=$((12345 / 1000))"."$((12345 % 1000))
+	# Result is "12.345".
 ```
 
 ```bash
-# Floating point math:
-a=$((12345 / 1000))"."$((12345 % 1000))
-	# Result is "12.345".
 ```
