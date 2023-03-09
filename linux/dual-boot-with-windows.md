@@ -7,7 +7,11 @@
 - Ubuntu install partitions (for `/` and swap area) can be either primary or logical
 - Never defragment an SSD
 
-## Preparing the Computer
+## Prepare the Install Disk
+- Get a USB drive at least 8GB
+- Install the desired Ubuntu image using either [balenaEtcher](https://www.balena.io/etcher) or [Rufus](https://rufus.ie/en/)
+
+## Prepare the Computer
 - The drive must be NTFS. FAT32 drives can't be shrunk.
 - Backup the entire drive (Windows) if desired
 - Shrink the existing drive to make room for the Ubuntu partition
@@ -30,7 +34,7 @@
 		- [Can't Shrink Volume on Windows 10! Here Are Solutions! [Partition Manager]](https://www.partitionwizard.com/partitionmanager/cannot-shrink-volume-win10.html)
 	- When this is done, you should have a new "free space" / "unallocated" partition large enough to hold the Ubuntu partition and a swap partition.
 
-## Installing Ubuntu
+## Install Ubuntu
 
 ### UEFI Method
 
@@ -64,7 +68,7 @@ Other References
 - Very detailed guide: [How do I install Ubuntu alongside a pre-installed Windows with UEFI?](https://askubuntu.com/questions/221835/how-do-i-install-ubuntu-alongside-a-pre-installed-windows-with-uefi)
 - [Ubuntu: UEFI](https://help.ubuntu.com/community/UEFI)
 
-### Legacy / MBR Method
+### Legacy/MBR Method
 
 - Follow this guide:
 	- [How to Install Ubuntu With Dual Boot (Easy Step-wise Guide)](https://bhrigu.medium.com/how-to-install-ubuntu-with-dual-boot-easy-step-wise-guide-5bffddb8b548)
@@ -118,6 +122,7 @@ Run `bcdedit /enum` and confirm that Windows Boot Manager is now using `shimx64.
 	- This happened when I tried booting off my live install USB drive, so somehow the drive got messed up. I fixed this buy just re-flashing the Ubuntu install disk. I could have also fixed it by manually changing the bootloader files on the disk.
 
 ## How to Change Grub Boot Order
+
 Change what boots by default when you turn on the computer.
 - Method 1 = [Make Windows boot by Default in a Windows + Linux Dual-Boot System](https://www.techmesto.com/set-windows-as-default-in-linux-dual-boot/)
 - Method 2 = [grub-customizer](https://pureinfotech.com/dual-boot-ubuntu-windows-10/#customize_ubuntu_grub)
