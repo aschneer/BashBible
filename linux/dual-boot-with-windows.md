@@ -54,11 +54,11 @@ This method is preferred. It is also required if the Windows system is already s
 
 This is what the "Something else" (manual installation) screen should look like in the Ubuntu installer when everything is configured properly.
 
-![[Ubuntu_UEFI_Install_230308_IMG_1253.jpg]]
+![](./Ubuntu_UEFI_Install_230308_IMG_1253.jpg)
 
 After clicking "Install Now," review the changes and confirm that only the intended partitions will be formatted.
 
-![[Ubuntu_UEFI_Install_230308_IMG_1254.jpg]]
+![[./Ubuntu_UEFI_Install_230308_IMG_1254.jpg]]
 
 Other References
 - Very detailed guide: [How do I install Ubuntu alongside a pre-installed Windows with UEFI?](https://askubuntu.com/questions/221835/how-do-i-install-ubuntu-alongside-a-pre-installed-windows-with-uefi)
