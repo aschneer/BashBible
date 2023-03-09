@@ -54,11 +54,11 @@ This method is preferred. It is also required if the Windows system is already s
 
 This is what the "Something else" (manual installation) screen should look like in the Ubuntu installer when everything is configured properly.
 
-![](./Ubuntu_UEFI_Install_230308_IMG_1253.jpg)
+![](./dual-boot-with-windows/Ubuntu_UEFI_Install_230308_IMG_1253.jpg)
 
 After clicking "Install Now," review the changes and confirm that only the intended partitions will be formatted.
 
-![[./Ubuntu_UEFI_Install_230308_IMG_1254.jpg]]
+![](./dual-boot-with-windows/Ubuntu_UEFI_Install_230308_IMG_1254.jpg)
 
 Other References
 - Very detailed guide: [How do I install Ubuntu alongside a pre-installed Windows with UEFI?](https://askubuntu.com/questions/221835/how-do-i-install-ubuntu-alongside-a-pre-installed-windows-with-uefi)
@@ -105,16 +105,16 @@ bcdedit /set {bootmgr} path \EFI\Microsoft\Boot\bootmgfw.efi
 
 If the above works, you will see this success message:
 
-![[UbuntuDualBoot_NoGrub_WindowsFix_230308.png]]
+![](./dual-boot-with-windows/UbuntuDualBoot_NoGrub_WindowsFix_230308.png)
 
 Run `bcdedit /enum` and confirm that Windows Boot Manager is now using `shimx64.efi` or `grubx64.efi`.
 
-![[WindowsBootManager_bcdedit_Desktop_230309_Marked.png]]
+![](./dual-boot-with-windows/WindowsBootManager_bcdedit_Desktop_230309_Marked.png)
 
 - Reinstall Ubuntu:  Make the install partition Logical
 - Reinstall Ubuntu:  Make the install partition Primary
 - If you get this error, your bootloader file is not located where it should be on the disk, or it has a different name than what the system is expecting.
-	- ![[Ubuntu_BootError_230308_IMG_1252.jpg]]
+	- ![](./dual-boot-with-windows/Ubuntu_BootError_230308_IMG_1252.jpg)
 	- This happened when I tried booting off my live install USB drive, so somehow the drive got messed up. I fixed this buy just re-flashing the Ubuntu install disk. I could have also fixed it by manually changing the bootloader files on the disk.
 
 ## How to Change Grub Boot Order
