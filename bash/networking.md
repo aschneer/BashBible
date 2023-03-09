@@ -24,6 +24,11 @@ ip route show # (equivalent)
 ```
 
 ```bash
+# List all available network interfaces.
+ip link show
+```
+
+```bash
 # List all nodes on the network and their info.
 nmap 10.133.0.*
 	# Lists all nodes within this subnet.
