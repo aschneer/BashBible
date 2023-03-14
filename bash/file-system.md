@@ -91,3 +91,8 @@ sudo umount /dev/sdxx
 # Format partition:
 mkfs.ext4 /dev/sda1	# Format partition to ext4. Replace sda1 with desired partition.
 ```
+
+```bash
+# Partition tools:
+gdisk # GPT fdisk - best for advanced drive tools, partitioning
+```
