@@ -20,6 +20,7 @@
 	- When trying to add the hardware RAID into /etc/fstab and mounting it, it throws errors "wrong fs type, bad option, bad superblock, missing codepage or helper program, or other error." Or, "can't read superblock on /dev/…"
 	- Clearly the hardware RAID board is modifying the first HDD's partition table in a way that Ubuntu doesn't like.
 - Rather than use the hardware RAID, better to use `mdadm` to make a Linux software RAID.
+- `sudo apt install mdadm`
 - `man mdadm`
 - Mdadm cheat sheet | [Mdadm Cheat Sheet](https://www.ducea.com/2009/03/08/mdadm-cheat-sheet/)
 - Intel RST in Linux Guide | [Intel® Rapid Storage Technology (Intel® RST) in Linux*](https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/rst-linux-paper.pdf)
