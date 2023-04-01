@@ -77,3 +77,16 @@ sudo vim /etc/systemd/resolved.conf
 # Apply DNS changes.
 service systemd-resolved restart
 ```
+
+```bash
+# List active TCP connections (deprecated in favor of 'ss').
+netstat
+# List active TCP connections.
+ss
+# Open, close, transmit messages, and scan ports over TCP and UDP.
+netcat
+# Simple firewall manager for linux.
+# Allow or deny access to specific ports.
+# Interface to IP tables.
+ufw
+```
