@@ -32,3 +32,8 @@ ssh-add ~/.ssh/id_ed25519
 # List existing keys registered with the agent.
 ssh-add -l
 ```
+
+Generate Public SSH Key from Private Key:
+```bash
+ssh-keygen -y -f ~/.ssh/id_rsa > ~/.ssh/id_rsa.pub
+```
