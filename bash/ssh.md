@@ -23,3 +23,12 @@ ssh username@192.168.1.45 "ls -la ~/files"
 ssh username@192.168.1.45 "ls -la ~/files; cd /; ifconfig"	# Multiple commands.
 ```
 
+Adding SSH keys:
+```bash
+# Start SSH agent. This wipes all existing keys from the agent.
+eval "$(ssh-agent -s)"
+# Add the key.
+ssh-add ~/.ssh/id_ed25519
+# List existing keys registered with the agent.
+ssh-add -l
+```

@@ -120,3 +120,16 @@ sudo systemctl start [process]
 sudo systemctl stop [process]
 ```
 
+Bash Configuration
+
+```bash
+# Add commands that execute every time Bash shell opens.
+echo "[commands]" >> ~/.bashrc
+```
+
+Source Command
+
+```bash
+# Run file, and all variables created by it will be added to the current context.
+source ./script.sh
+```
