@@ -6,6 +6,7 @@
 - GPT (GUID Partition Table) allows 128 primary partitions
 - Ubuntu install partitions (for `/` and swap area) can be either primary or logical
 - Never defragment an SSD
+- **Don't install Ubuntu using a computer that already has Ubuntu, especially if it has a dual-boot. It seems to corrupt the bootloader of the existing install**
 
 ## Prepare the Install Disk
 - Get a USB drive at least 8GB
@@ -126,3 +127,6 @@ Run `bcdedit /enum` and confirm that Windows Boot Manager is now using `shimx64.
 Change what boots by default when you turn on the computer.
 - Method 1 = [Make Windows boot by Default in a Windows + Linux Dual-Boot System](https://www.techmesto.com/set-windows-as-default-in-linux-dual-boot/)
 - Method 2 = [grub-customizer](https://pureinfotech.com/dual-boot-ubuntu-windows-10/#customize_ubuntu_grub)
+
+## Removing Ubuntu
+- [How to Uninstall Ubuntu from Windows Dual Boot Safely](https://itsfoss.com/uninstall-ubuntu-linux-windows-dual-boot/)
