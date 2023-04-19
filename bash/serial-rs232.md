@@ -63,6 +63,15 @@ Ctrl+A
 D
 ```
 
+Once you exit the screen, you will not be able to open it again with the same command. Instead, you need to do the following.
+
+```bash
+# Detach and restart screen.
+screen -dr
+	# d = detach
+	# r = restart
+```
+
 Kill screen session (ends session for everyone)
 
 ```bash
