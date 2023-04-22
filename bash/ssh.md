@@ -5,6 +5,8 @@ SSH into a host machine:
 # -i = pass in a private key (identity) file.
 # IP = ip of the host machine
 ssh -i ~/.ssh/id_rsa username@192.168.1.45
+# Specify port
+ssh <user>@<hostname> -p 8090
 ```
 
 Kill a frozen SSH terminal:

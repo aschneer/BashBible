@@ -47,9 +47,24 @@ w = 2 = 010b
 x = 1 = 001b
 ```
 
-| binary code | decimal code | owner | group | user (all others) | 
+| decimal code |     |     |     |     |     |     |     |     |     |     |     |
+| ------------ | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|              | o   | o   | o   |     | g   | g   | g   |     | u   | u   | u   |
+|              | r   | w   | x   |     | r   | w   | x   |     | r   | w   | x   |
+|              |     |     |     |     |     |     |     |     |     |     |     |
+| 700          | 1   | 1   | 1   |     | 0   | 0   | 0   |     | 0   | 0   | 0   |
+| 600          | 1   | 1   | 0   |     | 0   | 0   | 0   |     | 0   | 0   | 0   |
+| 500          | 1   | 0   | 1   |     | 0   | 0   | 0   |     | 0   | 0   | 0   |
+| 400          | 1   | 0   | 0   |     | 0   | 0   | 0   |     | 0   | 0   | 0   |
+| 300          | 0   | 1   | 1   |     | 0   | 0   | 0   |     | 0   | 0   | 0   |
+| 200          | 0   | 1   | 0   |     | 0   | 0   | 0   |     | 0   | 0   | 0   |
+| 100          | 0   | 0   | 1   |     | 0   | 0   | 0   |     | 0   | 0   | 0   |
+| 000          | 0   | 0   | 0   |     | 0   | 0   | 0   |     | 0   | 0   | 0   |
+
+| binary code | decimal code | owner | group | user (all others) |
 | ----------- | ------------ | ----- | ----- | ----------------- |
 | ooo ggg uuu |              |       |       |                   |
+| rwx rwx rwx |              |       |       |                   |
 | 100 000 000 | 400          | r--   | ---   | ---               |
 | 010 000 000 | 200          | -w-   | ---   | ---               |
 | 001 000 000 | 100          | --x   | ---   | ---               |
@@ -185,4 +200,18 @@ source ./script.sh
 # Allows you to execute files from this directory by name
 # without providing the complete path.
 source ~/andrew/robotics/scripts/
+```
+
+Process Management
+
+```bash
+top  # see processes currently running
+htop  # newer, more advanced version of 'top'
+ps faux  # simple list of processes currently running
+ps faux | grep "xxx"  # filter processes; grep itself will always show up as a process in the resulting list
+Ctrl+C  # sends SIGINT signal to program, shuts down program, only works on foreground processes
+Ctrl+Z  # sends SIGSTOP signal, suspsneds process, sends foreground process to background, only works on foreground processes. Processes in background won't receive Ctrl+C or 'kill' commands.
+bg  # resume execution of a suspended/background process, bring it back to foreground. It will immediately receive previous Ctrl+C and 'kill' signals that were sent when the process was in the background.
+kill <PID>  # kill a process by PID, get from 'ps faux' list. Process must be executing in foreground to kill it
+./script.sh &  # starts process as a background process
 ```
