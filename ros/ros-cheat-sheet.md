@@ -1,5 +1,18 @@
 # ROS Cheat Sheet
 
+Key Commands
+
+```bash
+source [setup file]  # Sets up environment variables for ROS.
+	source /opt/ros/noetic/setup.bash
+roscore &  # Start ROS Master in background
+rosrun [package name] [node/executable]  # Start ROS node
+	rosrun turtlesim turtlesim_node
+rosnode
+	rosnode list  #
+	rosnode info  /turtlesim
+```
+
 ```cpp
 ros::init(argc, argv, "rosbot_node")  // create ros node
 RosbotClass::get_position()  // get published message "position"
