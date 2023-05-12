@@ -79,6 +79,14 @@ Ctrl+A
 K
 ```
 
+Screen Troubleshooting
+
+- If you run screen and immediately get `[screen terminated]`, most likely another device or software is already connected to the serial port. Only one device can connect to a serial port at once.
+- If the screen opens but it is blank and there is no response when you type and send commands:
+	- Another USB/DB9 serial adapter might be connected to the serial lines from a different computer. Remove it.
+	- Serial port settings (baud rate, etc.) might not match the device you're connecting to. Sometimes the wrong baud rate will produce garbled text on the screen, and sometimes it will be blank.
+	- The serial device is not connected (i.e. wiring issue) such that you are not receiving the signal.
+
 Minicom / Picocom
 
 ```bash
