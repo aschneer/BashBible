@@ -56,6 +56,14 @@ screen /dev/ttyUSB4 115200
 
 You can type commands in the screen and press **Enter** to send them to the serial device, but what you type will not be echoed back to you.
 
+Record data from screen session
+
+```bash
+# Record screen session to log file in current directory.
+# Log file name = screenlog.0.
+Ctrl+A Shift+H
+```
+
 Exit screen session (leaves session running, just removes you from it)
 
 ```bash
@@ -92,4 +100,13 @@ Minicom / Picocom
 ```bash
 sudo minicom -s
 picocom
+```
+
+Output Serial Data to Text File
+
+```bash
+# Continuously record data from serial port.
+# Stop with Ctrl+C.
+# Only works if serial port is not in use already.
+cat /dev/ttyUSB0 > output.txt
 ```
