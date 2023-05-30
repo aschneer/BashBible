@@ -1,6 +1,6 @@
 # Install ROS
 
-REF = http://wiki.ros.org/noetic/Installation/Ubuntu
+REF = [Ubuntu install of ROS Noetic](http://wiki.ros.org/noetic/Installation/Ubuntu)
 
 Install ROS Noetic on Ubuntu 20.04.
 
