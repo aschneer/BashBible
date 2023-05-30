@@ -1,5 +1,7 @@
 # Create New Workspace
 
+REF = http://wiki.ros.org/catkin/Tutorials/create_a_workspace
+
 Create a new workspace called "sample_ws" in the home folder.
 
 ```bash
