@@ -31,10 +31,8 @@ rospack
 	rospack list  # List all ROS packages installed
 	rospack find  # Search for specific package installed
 roscd [pkg name]  # Jump to folder of a package by name
-catkin_init_workspace  # Initialize new workspace (run in xxxxx_ws folder)
 catkin_create_pkg  # Create new package folder
 catkin_make  # Compile a workspace
-catkin build  # Compile a workspace (preferred, not always available)
 
 # Autocomplete - How to find commands/tools:
 # (might have to hit tab twice)
@@ -93,4 +91,11 @@ rostopic list
 rostopic info /topic_name
 # Print messages on a topic
 rostopic echo /topic_name
+```
+
+Unused
+
+```bash
+catkin_init_workspace  # Initialize new workspace (run in xxxxx_ws folder)
+catkin build  # Compile a workspace (preferred, not always available)
 ```
