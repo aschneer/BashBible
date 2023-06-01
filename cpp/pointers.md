@@ -54,7 +54,8 @@ void func(int& i) { return 0; }  // Function declaration.
 void func(int &i) { return 0; }  // Function declaration (equivalent).
 int num = 4;
 func(num);  // Function call
-  //NO DIFFERENCE IN HOW YOU PASS THE ARGUMENT BY VALUE VS. BY REFERENCE!
+  // NO DIFFERENCE IN HOW YOU PASS THE ARGUMENT BY VALUE VS. BY REFERENCE!
+  // ONLY DIFFERENCE IS IN THE FUNCTION DEFINITION.
 
 // Pass Pointer:
 void func(int* i) { return 0; }  // Function declaration.
