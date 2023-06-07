@@ -15,4 +15,9 @@ source ~/.bashrc  # Source the new line added to .bashrc (otherwise wouldn't exe
 sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential  # Install tools for building packages.
 sudo rosdep init  # Initialize ROS system dependency tool.
 rosdep update  # Update ROS system dependency tool.
+# https://catkin-tools.readthedocs.io/en/latest/installing.html
+sudo apt-get install wget  # If not already installed
+wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install python3-catkin-tools  # Catkin tools include catkin init, wstool, catkin build, and others.
 ```
