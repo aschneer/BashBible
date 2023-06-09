@@ -1,14 +1,12 @@
 # _ROS Cheat Sheet
 
 Setup
-
 ```bash
 source [setup file]  # Sets up environment variables for ROS.
 source /opt/ros/noetic/setup.bash
 ```
 
 Autocomplete
-
 ```bash
 # Autocomplete - How to find commands/tools:
 # (might have to hit tab twice)
@@ -20,14 +18,12 @@ rostopic [tab]  # Tools related to ROS topics
 ```
 
 ROS Master
-
 ```bash
 roscore
 roscore &  # Start ROS Master in background
 ```
 
 Packages
-
 ```bash
 rospack [tab]  # List all rospack options
 rospack list  # List all ROS packages installed
@@ -37,8 +33,7 @@ roscd [pkg name]  # Jump to folder of a package by name
 ```
 
 Nodes
-
-```
+```bash
 rosrun [package name] [node executable]  # Start ROS node
 rosrun turtlesim turtlesim_node
 rosnode list  # list all nodes currently running
@@ -46,7 +41,6 @@ rosnode info /turtlesim
 ```
 
 Topics
-
 ```bash
 rostopic list
 rostopic info [topic]
@@ -63,7 +57,6 @@ rostopic pub /topic_name [tab] [tab] --once  # Sends 1 message then kills it.
 ```
 
 Graphical Tools
-
 ```bash
 rqt  # All graphical tools
 	rqt [tab]  # See all rqt plugins and launch them directly
@@ -95,22 +88,28 @@ sudo apt-get update
 sudo apt-get install python3-catkin-tools
 sudo pip3 install -U catkin_tools
 catkin init  # from workspace root folder
-catkin build
+catkin build  # from workspace root folder
+```
 
-# wstool:
-https://wiki.ros.org/wstool
+wstool
+[wstool ROS Docs](https://wiki.ros.org/wstool)
+```bash
 sudo apt-get install python-wstool
 sudo pip install -U wstool
 wstool init src PATH_TO_ROSINSTALL_FILE.rosinstall  # from workspace root folder
 wstool update -t src
+```
 
-# rosdep:
-https://wiki.ros.org/rosdep
+rosdep
+[rosdep ROS Docs](https://wiki.ros.org/rosdep)
+```bash
 # ROS Noetic
 sudo apt-get install python3-rosdep
 # ROS Melodic and earlier
 sudo apt-get install python-rosdep
+# All versions
 sudo pip install -U rosdep
+
 sudo rosdep init
 rosdep update
 rosdep install AMAZING_PACKAGE
@@ -125,31 +124,35 @@ ROS_INFO_STREAM(x_2 << " and " << y_2);
 ROS_INFO();
 ```
 
-Compiling and running
+Compiling and Running
 
 ```bash
+# Compile Using ROS - catkin_make
+cd ~/catkin_ws
+catkin_make
+source devel/setup.bash
+
+# Compile Using ROS - catkin build
+# Catkin Tools must be installed.
+cd ~/catkin_ws
+catkin build
+source devel/setup.bash
+
+# Run
+rosrun c_scripts unit1_exercise  # pass package and program
+
 # Compile using g++
 g++ -std=c++11 name.cpp -o name_compiled
 # Run
 ./name_compiled
-
-# Compile using ROS
-cd ~/catkin_ws
-catkin_make
-source devel/setup.bash
-# Run
-rosrun c_scripts unit1_exercise  # pass package and program
 ```
 
 Other
-
 ```bash
 ~  # Private namespace prefix
 ```
 
 Unused
-
 ```bash
 catkin_init_workspace  # Initialize new workspace (run in xxxxx_ws folder)
-catkin build  # Compile a workspace (preferred, not always available)
 ```
