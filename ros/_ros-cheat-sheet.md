@@ -70,22 +70,23 @@ rqt  # All graphical tools
 rviz
 ```
 
+ROS Bags
 ```bash
-
-
-
-
-
 rosbag record -a  # Record all messages to a bag file.
 rosbag info [your_bag_file.bag]  # Inspect a bag file.
 rosbag play [your_bag_file.bag]  # Play back a bag file.
 rosbag filter [your_bag_file.bag] [filtered_bag_file.bag] "topic == '/camera/image' or topic == '/imu/data'"
 	# Copy specific messages from one bag file to a new bag file.
-# Show message format in bag file:
 rosbag info [your_bag_file.bag]  # See list of topics and types within bag file.
-rosmsg show [message_type]  # Show format of a message type.
+```
 
-# Catkin Tools:
+ROS Messages
+```bash
+rosmsg show [message_type]  # Show format of a message type.
+```
+
+Catkin Tools (Optional Package)
+```bash
 sudo sh \
     -c 'echo "deb http://packages.ros.org/ros/ubuntu `lsb_release -sc` main" \
         > /etc/apt/sources.list.d/ros-latest.list'
