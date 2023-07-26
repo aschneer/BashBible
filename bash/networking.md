@@ -90,3 +90,10 @@ netcat
 # Interface to IP tables.
 ufw
 ```
+
+```bash
+# Test network speed
+tcptrack
+iperf
+iftop
+```
