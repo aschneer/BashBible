@@ -6,7 +6,7 @@ mypointer = &myvariable;
 *mypointer = 23;
 ```
 
-Pointers and Arrays
+## Pointers and Arrays
 
 ```cpp
 int myarray[6] = {4,8,15,16,23,42};
@@ -28,7 +28,7 @@ mypointer = myarray;
 *(mypointer + 4) = 50;
 ```
 
-Pointers to Constants
+## Pointers/References to Constants
 
 ```cpp
 const int* pointer = &variable;
@@ -39,9 +39,52 @@ int* pointer;  // non-constant pointer to non-constant integer
 const int* pointer;  // non-constant pointer to constant integer
 int* const pointer;  // constant pointer to non-constant integer
 const int* const pointer;  // constant pointer to constant integer
+const int& ref;  // non-constant reference to constant integer
 ```
 
-Functions - Passing by Value vs. by Reference:
+## References
+
+References are different than pointers.
+
+```cpp
+// References apply to the type, not the variable.
+int& x = 5;
+
+// After a reference is defined, it can be used
+// exactly as a normal variable without any special
+// dereferencing or syntax (like a pointer would).
+// Any changes to the variable will update the same
+// memory location.
+x = 3;
+
+// This function accepts as input either a normal integer
+// (like `int a`) or a reference to an integer (like x above).
+// Regardless of what is passed in, the function will receive
+// the reference to that integer. This function will also
+// return a reference to an integer.
+int& func(int& input) { return 3; }
+
+// Running the function, you treat the input and output
+// like normal integers, no special syntax required.
+// Just know you are receiving a reference to the same
+// integer in memory used in the function.
+int result = func(x);
+
+// So basically, there's nothing special you have to do
+// to use references. You just have to define the data type
+// in a function's input or output as a reference data type.
+```
+
+Example:
+
+```cpp
+int x = 5;
+int& y = x;
+y = 10; // This will modify the value of x to be 10.
+// Both x and y refer to the same memory location.
+```
+
+## Functions - Passing by Value vs. by Reference:
 
 ```cpp
 // Pass by Value:
