@@ -1,18 +1,22 @@
 {
   "main": {
-    "id": "f0a4263fbfdb9fef",
+    "id": "9abc0976893d6910",
     "type": "split",
     "children": [
       {
-        "id": "f943442df5a35599",
+        "id": "a41f13a66b4d2d6f",
         "type": "tabs",
         "children": [
           {
-            "id": "acae88222cc01567",
+            "id": "7ce732cb6cd301cb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "git/git_reference.md",
+                "mode": "source",
+                "source": true
+              }
             }
           }
         ]
@@ -21,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "f530250dd88debcc",
+    "id": "63d83aca3d171996",
     "type": "split",
     "children": [
       {
-        "id": "b5a451aed73f4f4e",
+        "id": "2d10fdb532b93bb0",
         "type": "tabs",
         "children": [
           {
-            "id": "00610cb31d8e89e4",
+            "id": "154f12677a138231",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -39,7 +43,7 @@
             }
           },
           {
-            "id": "3db15b1b26435046",
+            "id": "da80befe37109932",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -54,7 +58,7 @@
             }
           },
           {
-            "id": "edf28489da2b08ef",
+            "id": "aefe298a230a8ec5",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -68,19 +72,20 @@
     "width": 300
   },
   "right": {
-    "id": "0144b8d387d747bc",
+    "id": "fe8091f39ec1bea6",
     "type": "split",
     "children": [
       {
-        "id": "5eabbd43cb09bb3c",
+        "id": "ba800a1b3415280a",
         "type": "tabs",
         "children": [
           {
-            "id": "be9d38d48c4be1e8",
+            "id": "031e8663f6f780c7",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "git/git_reference.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -92,18 +97,19 @@
             }
           },
           {
-            "id": "6efe67bd48c1ead7",
+            "id": "1312ac9eb6f4c706",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "git/git_reference.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "02dbaeb013461859",
+            "id": "aea60bfeb118f182",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -114,11 +120,13 @@
             }
           },
           {
-            "id": "432dd1b48bbde0a4",
+            "id": "9487e5f9c4ebef16",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "git/git_reference.md"
+              }
             }
           }
         ]
@@ -138,6 +146,8 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "acae88222cc01567",
-  "lastOpenFiles": []
+  "active": "7ce732cb6cd301cb",
+  "lastOpenFiles": [
+    "bazel/bazel_reference.md"
+  ]
 }

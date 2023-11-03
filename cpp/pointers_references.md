@@ -47,8 +47,9 @@ const int& ref;  // non-constant reference to constant integer
 References are different than pointers.
 
 ```cpp
-// References apply to the type, not the variable.
+// The following are equivalent.
 int& x = 5;
+int &x = 5;
 
 // After a reference is defined, it can be used
 // exactly as a normal variable without any special
@@ -63,6 +64,7 @@ x = 3;
 // the reference to that integer. This function will also
 // return a reference to an integer.
 int& func(int& input) { return 3; }
+int& func(int &input) { return 3; } // equivalent
 
 // Running the function, you treat the input and output
 // like normal integers, no special syntax required.
