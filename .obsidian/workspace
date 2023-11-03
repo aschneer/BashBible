@@ -1,0 +1,140 @@
+{
+  "main": {
+    "id": "4f0156e16b1cd8f6",
+    "type": "split",
+    "children": [
+      {
+        "id": "b5b293fdc9c1eb8f",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Config/File Extension Excludes.md",
+            "mode": "source",
+            "source": true
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "174e2392c3c38f21",
+    "type": "split",
+    "children": [
+      {
+        "id": "a60538888bae06aa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d45672adafd2c41e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "c664cbdfaf6a39b9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#linux",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7460329c98095a8b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "a80bc190a684c74f",
+            "type": "leaf",
+            "state": {
+              "type": "file-tree-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "21c139c1901f1a54",
+    "type": "split",
+    "children": [
+      {
+        "id": "5880beed25d70631",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "96e83a37f0d8d9f0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Config/File Extension Excludes.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "68685e15ce8d3534",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Config/File Extension Excludes.md"
+              }
+            }
+          },
+          {
+            "id": "77fd8e7a48de68c9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "b5b293fdc9c1eb8f",
+  "lastOpenFiles": [
+    "MainVault/Anecdotes.md",
+    "MainVault/Jokes/_AssumptionsToChallenge.md",
+    "MainVault/Jokes/_Premises.md",
+    "MainVault/Jokes/_Expressions.md",
+    "MainVault/Jokes/Light bulb water.md",
+    "MainVault/Jokes/_ShortStories.md",
+    "MainVault/Jokes/_Topics.md",
+    "MainVault/Jokes/VILLAGE.md",
+    "MainVault/Jokes/_Setups.md",
+    "MainVault/Jokes/Getting my brakes done.md"
+  ]
+}

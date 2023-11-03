@@ -59,6 +59,11 @@ git branch branch_name
 git checkout branch_name
 # Delete a branch.
 git branch -d branch_name
+# Rebase new feature branch onto master
+git rebase master new_feature
+	# Alternatively:
+	git checkout new_feature
+	git rebase master
 ```
 
 Working with commits:

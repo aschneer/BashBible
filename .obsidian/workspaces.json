@@ -1,0 +1,116 @@
+{
+  "workspaces": {
+    "Workspace_01": {
+      "main": {
+        "id": "4f0156e16b1cd8f6",
+        "type": "split",
+        "children": [
+          {
+            "id": "942a61533c15eb90",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MainVault/Software/Software.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "174e2392c3c38f21",
+        "type": "split",
+        "children": [
+          {
+            "id": "a60538888bae06aa",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "d45672adafd2c41e",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {}
+                }
+              },
+              {
+                "id": "c664cbdfaf6a39b9",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "tag:#linux",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300
+      },
+      "right": {
+        "id": "21c139c1901f1a54",
+        "type": "split",
+        "children": [
+          {
+            "id": "5880beed25d70631",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "96e83a37f0d8d9f0",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "MainVault/Software/Software.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "68685e15ce8d3534",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "MainVault/Software/Software.md"
+                  }
+                }
+              },
+              {
+                "id": "77fd8e7a48de68c9",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300
+      },
+      "active": "942a61533c15eb90"
+    }
+  },
+  "active": "Workspace_01"
+}

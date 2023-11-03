@@ -19,4 +19,11 @@ bazel run -c opt //my_project/robot/arms:arm_motion
 bazel run //:buildifier
 
 bazel run -c opt :log_extractor -- --ingest_tool_release
+
+# Edit files in place, fix formatting issues.
+bazel run //:buildifier
+bazel run //:clang_format
+
+# Run a test in the folder containing the test.
+bazel test -c opt ...
 ```

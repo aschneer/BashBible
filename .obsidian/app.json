@@ -1,4 +1,15 @@
 {
+  "legacyEditor": false,
+  "livePreview": false,
+  "communityPluginSortOrder": "download",
+  "promptDelete": false,
+  "strictLineBreaks": true,
   "showLineNumber": true,
-  "livePreview": false
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "shortest",
+  "showUnsupportedFiles": false,
+  "attachmentFolderPath": "./",
+  "newFileLocation": "current",
+  "rightToLeft": false,
+  "useTab": true
 }
