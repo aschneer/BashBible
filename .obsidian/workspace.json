@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "23809f2c491793de",
+        "id": "971b77ce53c51b5b",
         "type": "tabs",
         "children": [
           {
-            "id": "e96fed4b11ef5e6e",
+            "id": "e7a6a0bc49bc49fc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "shasta_codebase/code-commit-process.md",
-                "mode": "source",
-                "source": true
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -102,7 +98,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "shasta_codebase/code-commit-process.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,9 +113,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "shasta_codebase/code-commit-process.md"
-              }
+              "state": {}
             }
           },
           {
@@ -148,7 +141,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "shasta_codebase/code-commit-process.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -177,8 +169,16 @@
       "file-tree-alternative:File Tree Alternative Plugin": false
     }
   },
-  "active": "e96fed4b11ef5e6e",
+  "active": "e7a6a0bc49bc49fc",
   "lastOpenFiles": [
+    "cpp/useful-libraries.md",
+    "git/code-commit-process-2-simple.md",
+    "git/code-commit-process-1.md",
+    "git/git_reference.md",
+    "python/useful-libraries.md",
+    "git/useful-tools.md",
+    "cpp/style-guide.md",
+    "python",
     "shasta_codebase/log_extractor_lib.cc.md",
     "shasta_codebase/code-commit-process.md",
     "shasta_codebase/shasta-repo.md",
@@ -199,13 +199,6 @@
     "MainVault/Jokes/_ShortStories.md",
     "CodeRef/cpp/new-features.md",
     "MainVault/Investing/220926_JeremyGranthamVideo_Notes.md",
-    "MainVault/Machine_Learning.md",
-    "MainVault/Anecdotes.md",
-    "CodeRef/cpp/pointers.md",
-    "CodeRef/cpp/loops.md",
-    "CodeRef/bash/file-system.md",
-    "CodeRef/bash/networking.md",
-    "CodeRef/bash/operators.md",
     "CodeRef/linux-notes/dual-boot-with-windows/WindowsBootManager_bcdedit_Desktop_230309_Marked.png",
     "CodeRef/linux-notes/dual-boot-with-windows/Ubuntu_UEFI_Install_230308_IMG_1254.jpg",
     "CodeRef/linux-notes/dual-boot-with-windows/Ubuntu_UEFI_Install_230308_IMG_1253.jpg",
@@ -221,7 +214,6 @@
     "CodeRef/Midjourney_AI",
     "CodeRef/CodeRef_Logo_01_Crop1x1.png",
     "CodeRef/CodeRef_Logo_01.png",
-    "CodeRef",
     "coderef/linux-notes/dual-boot-with-windows/WindowsBootManager_bcdedit_Desktop_230309_Marked.png",
     "coderef/linux-notes/dual-boot-with-windows/Ubuntu_UEFI_Install_230308_IMG_1254.jpg",
     "coderef/linux-notes/dual-boot-with-windows/Ubuntu_UEFI_Install_230308_IMG_1253.jpg"

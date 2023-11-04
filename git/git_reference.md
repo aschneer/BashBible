@@ -106,6 +106,9 @@ Comparing changes line-by-line:
 git log
 
 # Check your changes line-by-line with diff:
+	# Checks last commit against unstaged changes.
+	# If you do `git add .`, diff will show no changes.
+	git diff
 	# ALWAYS specify older commit first,
 		# otherwise colors will be reversed.
 	# You can use commit IDs or branch names (which
