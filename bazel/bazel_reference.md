@@ -26,4 +26,9 @@ bazel run //:clang_format
 
 # Run a test in the folder containing the test.
 bazel test -c opt ...
+
+# Print locations of everything
+bazel info
+
+bazel fetch
 ```

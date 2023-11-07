@@ -11,8 +11,12 @@
             "id": "41cb0776431b01ac",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "bazel/231107_Bazel_Training 102.md",
+                "mode": "source",
+                "source": true
+              }
             }
           }
         ]
@@ -98,6 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "bazel/231107_Bazel_Training 102.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +118,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "bazel/231107_Bazel_Training 102.md"
+              }
             }
           },
           {
@@ -141,6 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "bazel/231107_Bazel_Training 102.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -165,12 +173,15 @@
       "markdown-importer:Open format converter": false,
       "workspaces:Manage workspace layouts": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "templater-obsidian:Templater": false,
-      "file-tree-alternative:File Tree Alternative Plugin": false
+      "file-tree-alternative:File Tree Alternative Plugin": false,
+      "templater-obsidian:Templater": false
     }
   },
   "active": "41cb0776431b01ac",
   "lastOpenFiles": [
+    "bazel/231107_Bazel_Training 101.md",
+    "bazel/231107_Bazel_Training 102.md",
+    "bazel/bazel_reference.md",
     "git/code-commit-process-2-simple.md",
     "cpp/useful-libraries.md",
     "git/code-commit-process-1.md",
@@ -196,9 +207,6 @@
     "MainVault/Jokes/_Setups.md",
     "MainVault/Jokes/_Expressions.md",
     "MainVault/Jokes/Getting my brakes done.md",
-    "MainVault/Jokes/_ShortStories.md",
-    "CodeRef/cpp/new-features.md",
-    "MainVault/Investing/220926_JeremyGranthamVideo_Notes.md",
     "CodeRef/linux-notes/dual-boot-with-windows/WindowsBootManager_bcdedit_Desktop_230309_Marked.png",
     "CodeRef/linux-notes/dual-boot-with-windows/Ubuntu_UEFI_Install_230308_IMG_1254.jpg",
     "CodeRef/linux-notes/dual-boot-with-windows/Ubuntu_UEFI_Install_230308_IMG_1253.jpg",
