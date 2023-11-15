@@ -22,6 +22,21 @@ pwd  # print full path of current working directory
 ```
 
 ```bash
+# Search files recursively by name (substring).
+	# "*substring*" asterisks are necessary to
+	# search for a substring.
+	# "-print" flag seems to be optional
+find ./my_path/ -iname "*json*" <-print>
+
+# Search contents of files recursively
+grep -rin "hello-world" ./my_path/*
+grep -rin "hello-world" # current directory
+	# -r = recursive
+	# -i = non-case-sensitive
+	# -n = include line number of result within its file
+```
+
+```bash
 ### WARNING ### - be very careful with this
 # Delete directory (includes all files contained within):
 rm -rf

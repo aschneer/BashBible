@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "bazel/bazel_reference.md",
+                "file": "bash/general.md",
                 "mode": "source",
                 "source": true
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "bazel/bazel_reference.md",
+                "file": "bash/general.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "bazel/bazel_reference.md"
+                "file": "bash/general.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "bazel/bazel_reference.md",
+                "file": "bash/general.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -179,9 +179,12 @@
   },
   "active": "b57c952a111f498d",
   "lastOpenFiles": [
+    "bash/file-system.md",
+    "bash/general.md",
+    "bash/text-operations.md",
+    "bazel/bazel_reference.md",
     "bazel/231107_Bazel_Training 102.md",
     "bazel/231107_Bazel_Training 101.md",
-    "bazel/bazel_reference.md",
     "git/code-commit-process-2-simple.md",
     "cpp/useful-libraries.md",
     "git/code-commit-process-1.md",
@@ -204,9 +207,6 @@
     "MainVault/Jokes/_Topics.md",
     "MainVault/Jokes/_Premises.md",
     "MainVault/Jokes/_StartsOfJokes.md",
-    "MainVault/Jokes/_Setups.md",
-    "MainVault/Jokes/_Expressions.md",
-    "MainVault/Jokes/Getting my brakes done.md",
     "CodeRef/linux-notes/dual-boot-with-windows/WindowsBootManager_bcdedit_Desktop_230309_Marked.png",
     "CodeRef/linux-notes/dual-boot-with-windows/Ubuntu_UEFI_Install_230308_IMG_1254.jpg",
     "CodeRef/linux-notes/dual-boot-with-windows/Ubuntu_UEFI_Install_230308_IMG_1253.jpg",
