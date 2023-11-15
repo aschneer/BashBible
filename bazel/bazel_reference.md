@@ -15,10 +15,8 @@ bazel build -c opt //my_project/robot/arms:arm_motion
 # run the main function from arm_motion.cc (or .cpp).
 bazel run -c opt //my_project/robot/arms:arm_motion
 
-# Check your change.
-bazel run //:buildifier
-
-bazel run -c opt :log_extractor -- --ingest_tool_release
+# Run a specific module with a flag.
+bazel run -c opt :my_module -- --my_flag
 
 # Edit files in place, fix formatting issues.
 bazel run //:buildifier
