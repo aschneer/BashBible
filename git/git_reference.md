@@ -114,10 +114,14 @@ git log
 	# You can use commit IDs or branch names (which
 		# will specify the latest commit in that branch).
 	git diff [commit 1 (older)] [commit 2 (newer)]
+	
 	# Examples:
 		# If your local HEAD (master) is
 		# a few commits ahead of origin/master:
 	git diff origin/master master
 	git diff origin/master HEAD
 	git diff origin/HEAD master
+	# See diff between previous and current commit
+	git diff HEAD^1
+	git diff HEAD^1 HEAD # equivalent
 ```
