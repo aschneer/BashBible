@@ -1,5 +1,16 @@
 # SSH
 
+Make sure `ssh-agent` starts automatically and keys persist across reboots.
+```bash
+# Add these lines to ~/.bashrc
+eval "$(ssh-agent -s)"
+ssh-add -k ~/.ssh/*
+
+# Check keys added to ssh-agent
+ssh-add -l
+ssh-add -L
+```
+
 SSH into a host machine:
 ```bash
 # -i = pass in a private key (identity) file.

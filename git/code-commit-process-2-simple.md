@@ -82,6 +82,9 @@ Here's a simple workflow to follow:
 	git push origin HEAD:refs/heads/unreviewed/your-name/my_branch
 	# You can then go into Gerrit to delete
 	# this branch when you no longer need it.
+	#
+	# To pull down an unreviewed branch:
+	git pull origin refs/heads/unreviewed/your-name/my_remote_branch
 	```
 10. Add patches to existing commit in Gerrit
 	```bash
