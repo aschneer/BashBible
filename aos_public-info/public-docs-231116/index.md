@@ -6,8 +6,7 @@ AOS ("Autonomous Operating System") is an open source event-loop based framework
 realtime robotic systems. It is meant to serve the same role as
 [ROS](https://www.ros.org/) in a robotic system (including the fact that, like
 ROS, it is not actually an Operating System). However, the design priorities of
-AOS are somewhat different from those of both ROS and ROS2. See the [Design of
-AOS](design) for more detail.
+AOS are somewhat different from those of both ROS and ROS2. See the [](design.md) for more detail.
 
 Because AOS was originally developed under the auspices of a [High School
 Robotics Team](https://frc971.org/), it is still hosted on the corresponding

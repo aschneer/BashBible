@@ -7,7 +7,7 @@ void myfunction(int a=5, int b=1) {
 }
 ```
 
-Function Overloading
+Function Overloading (Polymorphism)
 
 ```cpp
 // The function that matches the # arguments, and data types of
