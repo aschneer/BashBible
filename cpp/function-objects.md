@@ -91,6 +91,17 @@ These are defined in place and temporary by nature.
 	// return_type = type of function return
 	// function_body = body of lambda function, each line
 	//	ending in semicolon.
+
+// Accept a lambda as input to a function
+void func(std::function<return_type(arg_type)> lambda_func) {
+	return_type my_var;
+	my_var = visitor(arg_type);
+}
+// Example
+void func(std::function<std::string(int)> lambda_func) {
+	std::string my_string;
+	my_string = lambda_func(6);
+}
 ```
 
 Not sure how to use this:
