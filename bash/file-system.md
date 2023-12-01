@@ -53,6 +53,28 @@ find ./ -type f
 ```
 
 ```bash
+# Search files recursively by name (substring).
+	# "*substring*" asterisks are necessary to
+	# search for a substring.
+	# "-print" flag seems to be optional
+find ./my_path/ -name "*json*" <-print> # case-sensitive
+find ./my_path/ -iname "*json*" <-print> # NOT case-sensitive
+
+# Search for multiple criteria.
+find ./my_path/ -iname "*myfile*" -and -iname "*.json*" # both
+find ./my_path/ -iname "*myfile*" -or -iname "*.json*" # either
+
+# Search contents of files recursively
+	# -r = recursive
+	# -i = non-case-sensitive
+	# -n = include line number of result within its file
+grep -rin "hello-world" # current directory
+grep -rin "hello-world" ./my_path
+grep -rin "hello-world" ./my_path/ # equivalent
+grep -rin "hello-world" ./my_path/* # NOT equivalent, not sure why
+```
+
+```bash
 # Get information for all connected disks, mounted or not:
 lsblk -fT -o +SIZE
 	# -a = all
