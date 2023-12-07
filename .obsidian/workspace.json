@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ros/urdf.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "ecddcfa92774d139",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "git/code-commit-process-2-simple.md",
+                "file": "git/git_reference.md",
                 "mode": "source",
                 "source": true
               }
@@ -114,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ros/urdf.md",
+                "file": "git/git_reference.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ros/urdf.md"
+                "file": "git/git_reference.md"
               }
             }
           },
@@ -160,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ros/urdf.md",
+                "file": "git/git_reference.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -191,12 +179,13 @@
   },
   "active": "989a8313a23d8696",
   "lastOpenFiles": [
-    "bash/file-system.md",
-    "ros/urdf.md",
-    "bash/general.md",
-    "bazel/bazel_reference.md",
-    "cpp/scope.md",
     "git/code-commit-process-2-simple.md",
+    "git/git_reference.md",
+    "bazel/bazel_reference.md",
+    "ros/urdf.md",
+    "bash/file-system.md",
+    "bash/general.md",
+    "cpp/scope.md",
     "cpp/Pasted image 20231127180537.png",
     "cpp/function-objects.md",
     "cpp/pointers_references.md",
@@ -218,7 +207,6 @@
     "aos/public-docs-231116/public-docs-231111.md",
     "aos/public-docs-231116/public-docs-23111.md",
     "aos/public-docs-231116/public-docs-2311.md",
-    "aos/public-docs-231116/public-docs-23.md",
     "aos_public-info/public-docs-231116",
     "aos/public-docs/Unconfirmed 502899.crdownload",
     "aos/public-docs/Unconfirmed 232347.crdownload",

@@ -22,8 +22,22 @@ bazel run -c opt :my_module -- --my_flag
 bazel run //:buildifier
 bazel run //:clang_format
 
-# Run a test in the folder containing the test.
+# Run all tests in the current folder.
+cd folder_containing_test
 bazel test -c opt ...
+# Run all tests in any folder.
+bazel test -c opt //path/to/my/folder/...
+# Useful options for `bazel test`:
+	# Show full output, expected vs. result
+	--test_output=streamed
+	# Rerun every test, don't use cached results from a previous run.
+	--nocache_test_results
+	# Print expected and actual results for all tests.
+	--test_output=all
+	# Print full expected output for any test that times out.
+	--test_verbose_timeout_warnings
+	# Print full expected output for all tests that fail.
+	--test_output=errors
 
 # Print locations of everything
 bazel info

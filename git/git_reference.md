@@ -64,6 +64,24 @@ git rebase master new_feature
 	# Alternatively:
 	git checkout new_feature
 	git rebase master
+
+# Get a clean origin/master in detached head state
+git checkout origin/master
+# Save it to a new branch
+git switch -c new_branch_name
+
+# Copy current state to new branch and
+# checkout that branch.
+git switch -c new_branch_name
+```
+
+Alternate way to pull down a remote branch:
+
+```bash
+# Checkout the remote branch in detached HEAD state
+git checkout origin/folder/branch2023.12
+# Save the retreived branch to a new local branch
+git switch -c new_branch_name
 ```
 
 Working with commits:
