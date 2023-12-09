@@ -108,5 +108,5 @@ void func(int *i) { return 0; }  // Function declaration (equivalent).
 int num = 4;
 int* num_ptr = &num;
 func(num_ptr);  // Function call
-func(&num);  // Function call - should also work
+func(&num);  // Function call - will also work
 ```

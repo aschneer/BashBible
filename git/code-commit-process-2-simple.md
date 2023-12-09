@@ -79,12 +79,19 @@ Here's a simple workflow to follow:
 	# You can also push to an unreviewed branch
 	# if you're not ready for code review and
 	# just want to back up your commit to the cloud.
-	git push origin HEAD:refs/heads/unreviewed/your-name/my_branch
+	git push origin HEAD:unreviewed/your-name/my_branch
 	# You can then go into Gerrit to delete
 	# this branch when you no longer need it.
 	#
 	# To pull down an unreviewed branch:
+	# Creates detached head state.
+	git checkout origin/unreviewed/your-name/my_remote_branch
+	# Copies detached head state into new branch with good state.
+	git switch -c new_branch_name
+	
+	# Worse way to do the same thing; requires rebasing.
 	git pull origin refs/heads/unreviewed/your-name/my_remote_branch
+	git pull origin unreviewed/your-name/my_remote_branch
 	```
 10. Add patches to existing commit in Gerrit
 	```bash

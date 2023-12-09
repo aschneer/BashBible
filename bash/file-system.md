@@ -1,11 +1,15 @@
 # File System
 
+Information about mounted disks:
+
 ```bash
 # Get file system information
 # for mounted disks only (disk space/usage, etc.):
 df -h
 	# -h is human readable
 ```
+
+Listing files in directories:
 
 ```bash
 # File list:
@@ -16,6 +20,8 @@ ls -Shla	# Same as above, but sort by largest files first.
 	# -l = vertical list
 	# -a = include all files/folders, including hidden
 ```
+
+Disk usage:
 
 ```bash
 # Get total disk usage of files and folders.
@@ -39,6 +45,8 @@ du -hca --threshold=100M ./* | sort -hr > result.txt
 	# 		through result in text editor.
 ```
 
+Disk usage tree:
+
 ```bash
 # Package to view file/directory sizes.
 ncdu
@@ -46,19 +54,23 @@ ncdu
 	# see disk usage in real time.
 ```
 
+Recursive file list:
+
 ```bash
 # List all files within directory, including subdirectories:
 find . -type f
 find ./ -type f
 ```
 
+File search by substring in name, recursive:
+
 ```bash
 # Search files recursively by name (substring).
 	# "*substring*" asterisks are necessary to
 	# search for a substring.
 	# "-print" flag seems to be optional
-find ./my_path/ -name "*json*" <-print> # case-sensitive
 find ./my_path/ -iname "*json*" <-print> # NOT case-sensitive
+find ./my_path/ -name "*json*" <-print> # case-sensitive
 
 # Search for multiple criteria.
 find ./my_path/ -iname "*myfile*" -and -iname "*.json*" # both
@@ -72,6 +84,21 @@ grep -rin "hello-world" # current directory
 grep -rin "hello-world" ./my_path
 grep -rin "hello-world" ./my_path/ # equivalent
 grep -rin "hello-world" ./my_path/* # NOT equivalent, not sure why
+
+# Don't show any context. Just show the matched search terms.
+grep -o "term" file.txt
+
+# Show all context (entire text).
+	# 9999 is an example.
+	# It just needs to be a large number.
+	# 0 is supposed to work, but it didn't for me.
+grep -C 9999 "term" file.txt
+
+# Search for multiple search terms.
+# AND logic:
+grep -e "term1" -e "term2" -e "term3" file.txt
+# OR logic:
+grep -E "term1|term  2|search term 3" file.txt
 ```
 
 ```bash
