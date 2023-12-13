@@ -1,5 +1,11 @@
 # File System
 
+Dummy "null" file included in Linux distros:
+
+```bash
+/dev/null
+```
+
 Information about mounted disks:
 
 ```bash
