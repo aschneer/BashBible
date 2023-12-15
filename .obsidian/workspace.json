@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "git/code-commit-process-2-simple.md",
+                "file": "bazel/importing-external-packages.md",
                 "mode": "source",
                 "source": true
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "git/code-commit-process-2-simple.md",
+                "file": "bazel/importing-external-packages.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "git/code-commit-process-2-simple.md"
+                "file": "bazel/importing-external-packages.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "git/code-commit-process-2-simple.md",
+                "file": "bazel/importing-external-packages.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -179,11 +179,12 @@
   },
   "active": "989a8313a23d8696",
   "lastOpenFiles": [
+    "bazel/bazel_reference.md",
+    "bazel/importing-external-packages.md",
+    "git/code-commit-process-2-simple.md",
     "bash/file-system.md",
     "bash/general.md",
-    "git/code-commit-process-2-simple.md",
     "git/git_reference.md",
-    "bazel/bazel_reference.md",
     "cpp/macros.md",
     "cpp/pointers_references.md",
     "ros/urdf.md",
@@ -206,7 +207,6 @@
     "aos/public-docs-231116/public-docs-231116.md",
     "aos/public-docs-231116/public-docs.md",
     "aos/public-docs-231116/public-docs-231111.md",
-    "aos/public-docs-231116/public-docs-23111.md",
     "aos_public-info/public-docs-231116",
     "aos/public-docs/Unconfirmed 502899.crdownload",
     "aos/public-docs/Unconfirmed 232347.crdownload",
