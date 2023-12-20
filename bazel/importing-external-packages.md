@@ -39,6 +39,14 @@ cc_library(
 	# instead of saying `#include "include/headers/header_file.h"`
 	# you can just say `#include "header_file.h"`.
 	strip_include_prefix = "include/headers/",
+	deps = [
+		# If there are any other external packages that this
+		# package depends on, import them following these
+		# instructios the same way, and list them here
+		# as dependencies. The target you list is the one
+		# in the `BUILD.ext_package_name.bazel` file for the dependency.
+		"@other_http_archive_target//:other_BUILD.ext.bazel_target",
+	]
 )
 ```
 
@@ -62,6 +70,13 @@ cc_library(
 		"urdf_parser/include/urdf_parser/exportdecl.h"
 	],
 	strip_include_prefix = "urdf_parser/include/",
+	deps = [
+		"@urdfdom_headers//:urdf_exception",
+		"@urdfdom_headers//:urdf_model",
+		"@urdfdom_headers//:urdf_model_state",
+		"@urdfdom_headers//:urdf_sensor",
+		"@urdfdom_headers//:urdf_world",
+	]
 )
 ```
 

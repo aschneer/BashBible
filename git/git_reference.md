@@ -73,6 +73,13 @@ git switch -c new_branch_name
 # Copy current state to new branch and
 # checkout that branch.
 git switch -c new_branch_name
+
+# Get branch releases/2023.1.1 in detached head state
+git checkout origin/releases/2023.1.1
+
+# Get remote branch releases/2023.1.1, and create a
+# matching local branch to track the remote branch
+git checkout releases/2023.1.1
 ```
 
 Alternate way to pull down a remote branch:
