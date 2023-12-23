@@ -70,7 +70,7 @@ git checkout origin/master
 # Save it to a new branch
 git switch -c new_branch_name
 
-# Copy current state to new branch and
+# Copy current state (local commits) to new branch and
 # checkout that branch.
 git switch -c new_branch_name
 
