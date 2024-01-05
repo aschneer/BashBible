@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "git/git_reference.md",
+                "file": "cpp/function-objects.md",
                 "mode": "source",
                 "source": true
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "git/git_reference.md",
+                "file": "cpp/function-objects.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "git/git_reference.md"
+                "file": "cpp/function-objects.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "git/git_reference.md",
+                "file": "cpp/function-objects.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -179,16 +179,22 @@
   },
   "active": "989a8313a23d8696",
   "lastOpenFiles": [
+    "cpp/functions.md",
+    "git/code-commit-process-2-simple.md",
+    "cpp/templating.md",
+    "git/git_reference.md",
+    "git/useful-tools.md",
+    "cpp/enum-class.md",
+    "cpp/classes.md",
+    "cpp/namespaces.md",
     "python/operations.md",
     "python/classes.md",
     "bash/file-system.md",
-    "git/git_reference.md",
     "aws/s3-reference.md",
     "cpp/tinyxml2_how-to-use.md",
     "aws",
     "bazel/importing-external-packages.md",
     "bazel/bazel_reference.md",
-    "git/code-commit-process-2-simple.md",
     "bash/general.md",
     "cpp/macros.md",
     "cpp/pointers_references.md",
@@ -198,15 +204,9 @@
     "cpp/function-objects.md",
     "cpp/useful-libraries.md",
     "cpp/new-features.md",
-    "cpp/functions.md",
     "aos_public-info/aos-vs-ros.md",
     "aos_public-info/aos-overview.md",
     "aos_public-info/public-docs-231116/reference.md",
-    "aos_public-info/public-docs-231116/index.md",
-    "aos_public-info/public-docs-231116/getting_started.md",
-    "aos_public-info/public-docs-231116/flatbuffers.md",
-    "aos_public-info/public-docs-231116/design.md",
-    "aos_public-info/public-docs-231116/_public-docs.md",
     "js",
     "aos_public-info/public-docs-231116",
     "aos/public-docs/Unconfirmed 502899.crdownload",

@@ -47,6 +47,7 @@ Here's a simple workflow to follow:
 	```bash
 	bazel run //:buildifier
 	bazel run //:clang_format
+	./any_other_format_checker.sh
 	```
 8. If any changes were made by the format checkers, you will need to do a final commit amend to capture them.
 	```bash

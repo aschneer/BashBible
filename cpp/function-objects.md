@@ -104,9 +104,21 @@ void func(std::function<std::string(int)> lambda_func) {
 }
 ```
 
-Not sure how to use this:
+Define a lambda with empty parameters (types only):
+
+```cpp
+[var1, var2](int /* empty */, std::string /* empty */) -> return_type { function_body }
+```
+
+Declare a lambda variable, and call it:
 
 ```cpp
 // Save a lambda to a variable
 std::function<return_type(arg1_type, arg2_type)> func_name;
+
+// Call lambda
+arg1_type = arg1;
+arg2_type = arg2;
+return_type my_result;
+my_result = func_name(arg1, arg2);
 ```
