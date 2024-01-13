@@ -70,9 +70,14 @@ git checkout origin/master
 # Save it to a new branch
 git switch -c new_branch_name
 
-# Copy current state (local commits) to new branch and
-# checkout that branch.
+# Duplicate current branch
+# to new branch and checkout the new branch.
 git switch -c new_branch_name
+
+# Duplicate an existing branch
+# and checkout the new branch copy.
+git switch -c feature/branch2 feature/branch1
+git checkout -b feature/branch2 feature/branch1
 
 # Get branch releases/2023.1.1 in detached head state
 git checkout origin/releases/2023.1.1
@@ -91,9 +96,33 @@ git checkout origin/folder/branch2023.12
 git switch -c new_branch_name
 ```
 
+Delete all local UNCOMMITTED changes to a specific file:
+
+```bash
+git restore path/to/file
+git checkout -- path/to/file
+```
+
+Delete all local changes to a specific file in a commit:
+
+```bash
+# Move all committed changes back to staging area
+# (tracked, but not committed).
+git reset --soft HEAD~1
+# Unstage/untrack the specific file.
+git reset HEAD <file>
+# Revert all unstaged changes.
+git restore . # Confirmed this works
+# or...
+git checkout . # Not tested
+```
+
 Working with commits:
 
 ```bash
+# Edit current commit:
+git commit --amend
+
 # Edit current commit and message.
 	# You can "git add ." and include new
 	# changes in the amended commit as well.
@@ -101,6 +130,9 @@ git commit --amend -m "New and improved commit message"
 
 # To edit a previous commit message, use
 # interactive rebase with option 'r' (reword).
+
+# Undo a `git commit --amend`
+git reset --soft HEAD@{1}
 ```
 
 Interactive Rebase:
