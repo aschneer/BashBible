@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "git/code-commit-process-2-simple.md",
+                "file": "cpp/smart-pointers.md",
                 "mode": "source",
                 "source": true
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "git/code-commit-process-2-simple.md",
+                "file": "cpp/smart-pointers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "git/code-commit-process-2-simple.md"
+                "file": "cpp/smart-pointers.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "git/code-commit-process-2-simple.md",
+                "file": "cpp/smart-pointers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -178,6 +178,9 @@
   },
   "active": "fd493358475e5662",
   "lastOpenFiles": [
+    "cpp/pointers_references.md",
+    "cpp/smart-pointers.md",
+    "git/code-commit-process-2-simple.md",
     "bazel/bazel_reference.md",
     "bazel/environmental-variables.md",
     "bazel/importing-external-packages.md",
@@ -189,7 +192,6 @@
     "aos_public-info/public-docs-231116/getting_started.md",
     "cpp/function-objects.md",
     "cpp/functions.md",
-    "git/code-commit-process-2-simple.md",
     "cpp/templating.md",
     "git/useful-tools.md",
     "cpp/enum-class.md",
@@ -202,9 +204,7 @@
     "aws",
     "bash/general.md",
     "cpp/macros.md",
-    "cpp/pointers_references.md",
     "ros/urdf.md",
-    "cpp/scope.md",
     "cpp/Pasted image 20231127180537.png",
     "js",
     "aos_public-info/public-docs-231116",
