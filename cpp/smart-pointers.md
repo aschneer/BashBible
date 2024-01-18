@@ -121,3 +121,7 @@ void func(int* b) {
 int* a_raw = a.get();
 func(a_raw);
 ```
+
+### Adding a `std::unique_ptr` to a STL Container
+
+If you add a `std::unique_ptr` to a container using `emplace()`, `emplace_back()`, `push_back()` or similar, ownership will be transferred to the container. The pointer will survive the emplace/push function exiting. See source code of these methods for details.
