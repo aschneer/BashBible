@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "584c9346d741bb2c",
+        "id": "52c27a514340255c",
         "type": "tabs",
         "children": [
           {
-            "id": "fd493358475e5662",
+            "id": "4f16fa0594288960",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cpp/smart-pointers.md",
+                "file": "ros/_ros-cheat-sheet.md",
                 "mode": "source",
                 "source": true
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cpp/smart-pointers.md",
+                "file": "ros/_ros-cheat-sheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cpp/smart-pointers.md"
+                "file": "ros/_ros-cheat-sheet.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cpp/smart-pointers.md",
+                "file": "ros/_ros-cheat-sheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -176,35 +176,35 @@
       "file-tree-alternative:File Tree Alternative Plugin": false
     }
   },
-  "active": "fd493358475e5662",
+  "active": "acc59428b2d59cc8",
   "lastOpenFiles": [
-    "cpp/pointers_references.md",
-    "cpp/smart-pointers.md",
-    "git/code-commit-process-2-simple.md",
-    "bazel/bazel_reference.md",
-    "bazel/environmental-variables.md",
-    "bazel/importing-external-packages.md",
-    "python/exceptions.md",
-    "git/git_reference.md",
+    "ros/setup.md",
+    "ros/node-template.md",
+    "ros/urdf.md",
     "python/unittest_printing.md",
+    "cpp/scope.md",
+    "bash/general.md",
+    "bash/data-structures.md",
+    "bash/conditionals.md",
+    "bash/CAN.md",
     "aws/services.md",
     "aws/s3-reference.md",
-    "aos_public-info/public-docs-231116/getting_started.md",
-    "cpp/function-objects.md",
-    "cpp/functions.md",
-    "cpp/templating.md",
+    "aos_public-info/aos-vs-ros.md",
+    "aos_public-info/aos-overview.md",
+    "bazel/importing-external-packages.md",
+    "bazel/bazel_reference.md",
+    "bazel/environmental-variables.md",
+    "git/code-commit-process-1.md",
+    "git/code-commit-process-2-simple.md",
+    "git/git_reference.md",
     "git/useful-tools.md",
-    "cpp/enum-class.md",
-    "cpp/classes.md",
-    "cpp/namespaces.md",
-    "python/operations.md",
-    "python/classes.md",
-    "bash/file-system.md",
-    "cpp/tinyxml2_how-to-use.md",
+    "aos_public-info/public-docs-231116/_public-docs.md",
+    "aos_public-info/public-docs-231116/reference.md",
+    "aos_public-info/public-docs-231116/index.md",
+    "aos_public-info/public-docs-231116/getting_started.md",
+    "aos_public-info/public-docs-231116/design.md",
+    "aos_public-info/public-docs-231116/flatbuffers.md",
     "aws",
-    "bash/general.md",
-    "cpp/macros.md",
-    "ros/urdf.md",
     "cpp/Pasted image 20231127180537.png",
     "js",
     "aos_public-info/public-docs-231116",

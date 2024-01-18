@@ -55,5 +55,3 @@ if __name__ == '__main__':
 In this updated example, we remove the `setUp()` and `tearDown()` methods. Instead, we directly use `unittest.main(buffer=False)` to disable the output buffering.
 
 By passing `buffer=False` to `unittest.main()`, the `print()` statements will be immediately flushed and displayed in real-time during the test execution when running the tests using Bazel.
-
-I apologize for any confusion caused. Let me know if you have any further questions.
