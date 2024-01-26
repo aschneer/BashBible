@@ -5,7 +5,6 @@ Include at the top of any bash script file.
 
 ```bash
 #!/bin/bash
-#!/usr/bin/bash
 ```
 
 General Navigation / Interaction with Bash Shell
