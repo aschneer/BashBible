@@ -105,6 +105,12 @@ grep -C 9999 "term" file.txt
 grep -e "term1" -e "term2" -e "term3" file.txt
 # OR logic:
 grep -E "term1|term  2|search term 3" file.txt
+
+# Wildcards
+grep -rin "hello.*" ./my_path
+# returns any "hello_" ending in "()" with
+# anything in between.
+grep -rin "hello_.*()" ./my_path
 ```
 
 ```bash

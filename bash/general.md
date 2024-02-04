@@ -165,4 +165,11 @@ Ctrl+Z  # sends SIGSTOP signal, suspsneds process, sends foreground process to b
 bg  # resume execution of a suspended/background process, bring it back to foreground. It will immediately receive previous Ctrl+C and 'kill' signals that were sent when the process was in the background.
 kill <PID>  # kill a process by PID, get from 'ps faux' list. Process must be executing in foreground to kill it
 ./script.sh &  # starts process as a background process
+
+# View of system performance information (like task manager):
+glances
+
+# System performance monitors
+sysbench
+Geekbench
 ```

@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "windows/wsl.md",
-                "mode": "preview",
+                "file": "git/git_reference.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "windows/wsl.md",
+                "file": "git/git_reference.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "windows/wsl.md"
+                "file": "git/git_reference.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "windows/wsl.md",
+                "file": "git/git_reference.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -163,6 +163,8 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "templater-obsidian:Templater": false,
+      "file-tree-alternative:File Tree Alternative Plugin": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -171,21 +173,26 @@
       "command-palette:Open command palette": false,
       "markdown-importer:Open format converter": false,
       "workspaces:Manage workspace layouts": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "templater-obsidian:Templater": false,
-      "file-tree-alternative:File Tree Alternative Plugin": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
   "active": "766d024e66f2aee2",
   "lastOpenFiles": [
+    "bash/general.md",
+    "software.md",
+    "bash/file-system.md",
+    "bash/functions.md",
+    "bash/_system-config-files.md",
+    "aws/s3-reference.md",
+    "windows/wsl.md",
+    "python/python_reference.md",
+    "git/git_reference.md",
+    "git/code-review-dependency-strategy.md",
     "hostname-ideas.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "CodeRef_Logo_01_Crop1x1.png",
     "CodeRef_Logo_01.png",
-    "windows/wsl.md",
-    "git/git_reference.md",
-    "bash/general.md",
     "ros/_ros-cheat-sheet.md",
     "ros/setup.md",
     "ros/node-template.md",
@@ -196,17 +203,11 @@
     "bash/conditionals.md",
     "bash/CAN.md",
     "aws/services.md",
-    "aws/s3-reference.md",
     "aos_public-info/aos-vs-ros.md",
     "aos_public-info/aos-overview.md",
     "bazel/importing-external-packages.md",
     "bazel/bazel_reference.md",
     "bazel/environmental-variables.md",
-    "git/code-commit-process-1.md",
-    "git/code-commit-process-2-simple.md",
-    "git/useful-tools.md",
-    "aos_public-info/public-docs-231116/_public-docs.md",
-    "aos_public-info/public-docs-231116/reference.md",
     "aws",
     "cpp/Pasted image 20231127180537.png",
     "js",

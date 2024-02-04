@@ -45,6 +45,11 @@ git push origin HEAD:refs/for/master
 # Pull latest master and rebase your
 # local master on top of it.
 git pull --rebase
+# Rebase new feature branch onto master
+git rebase master new_feature
+	# Alternatively:
+	git checkout new_feature
+	git rebase master
 
 # Push from specific local branch
 # to specific remote branch.
@@ -59,11 +64,10 @@ git branch branch_name
 git checkout branch_name
 # Delete a branch.
 git branch -d branch_name
-# Rebase new feature branch onto master
-git rebase master new_feature
-	# Alternatively:
-	git checkout new_feature
-	git rebase master
+git branch -D branch_name # Ignore warnings.
+
+# Rename a branch.
+git branch -m <old_branch_name> <new_branch_name>
 
 # Get a clean origin/master in detached head state
 git checkout origin/master
@@ -113,6 +117,7 @@ git reset --soft HEAD~1
 git reset HEAD <file>
 # Revert all unstaged changes.
 git restore . # Confirmed this works
+
 # or...
 git checkout . # Not tested
 ```
