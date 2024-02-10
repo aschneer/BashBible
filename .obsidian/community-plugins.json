@@ -4,5 +4,6 @@
   "templater-obsidian",
   "obsidian-outliner",
   "better-word-count",
-  "file-tree-alternative"
+  "file-tree-alternative",
+  "automatic-table-of-contents"
 ]

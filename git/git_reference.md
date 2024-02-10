@@ -83,12 +83,17 @@ git switch -c new_branch_name
 git switch -c feature/branch2 feature/branch1
 git checkout -b feature/branch2 feature/branch1
 
+# Create a new branch from the current branch
+# starting at a specific commit.
+git checkout -b new-branch-name <commit-hash>
+
 # Get branch releases/2023.1.1 in detached head state
 git checkout origin/releases/2023.1.1
 
 # Get remote branch releases/2023.1.1, and create a
 # matching local branch to track the remote branch
-git checkout releases/2023.1.1
+# (i.e. NOT detached HEAD state).
+git checkout releases/2023.1.1 # leave out "origin" (remote name)
 ```
 
 Alternate way to pull down a remote branch:
@@ -120,6 +125,17 @@ git restore . # Confirmed this works
 
 # or...
 git checkout . # Not tested
+```
+
+Discard all untracked files and changes, including any cherry-picked commits:
+
+This is how you can erase a cherry-pick you added to your branch for testing before the cherry-picked commit gets merged.
+
+- **Untracked:** Unknown to git, never been added with `git add`
+- **Unstaged:** Known to git, previously added with `git add`, but changed since then and changes not yet staged for next commit
+
+```bash
+git clean -d -f
 ```
 
 Working with commits:
@@ -186,4 +202,13 @@ git log
 	# See diff between previous and current commit
 	git diff HEAD^1
 	git diff HEAD^1 HEAD # equivalent
+```
+
+Visualizing commit tree:
+
+```bash
+git log --graph --oneline --all
+
+sudo apt install tig
+tig
 ```
