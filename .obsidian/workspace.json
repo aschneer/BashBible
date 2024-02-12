@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "git/git_reference.md",
+                "file": "cpp/exceptions.md",
                 "mode": "source",
                 "source": true
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "git/git_reference.md",
+                "file": "cpp/exceptions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "git/git_reference.md"
+                "file": "cpp/exceptions.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "git/git_reference.md",
+                "file": "cpp/exceptions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -159,7 +159,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 261.5
+    "width": 263.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,14 +178,17 @@
   },
   "active": "766d024e66f2aee2",
   "lastOpenFiles": [
+    "cpp/functions.md",
+    "cpp/exceptions.md",
+    "cpp/switch-case.md",
+    "python/exceptions.md",
+    "git/git_reference.md",
     "git/removing-cherry-picks.md",
     "python/operations.md",
     "python/python_reference.md",
     "python/useful-stuff.md",
-    "git/git_reference.md",
     "python/unittest_command-line-args.md",
     "python/unittest_printing.md",
-    "python/exceptions.md",
     "bash/general.md",
     "software.md",
     "bash/file-system.md",
@@ -205,9 +208,6 @@
     "ros/urdf.md",
     "cpp/scope.md",
     "bash/data-structures.md",
-    "bash/conditionals.md",
-    "bash/CAN.md",
-    "aws/services.md",
     "aws",
     "cpp/Pasted image 20231127180537.png",
     "js",
