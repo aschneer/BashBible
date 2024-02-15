@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cpp/exceptions.md",
+                "file": "git/git_reference.md",
                 "mode": "source",
                 "source": true
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cpp/exceptions.md",
+                "file": "git/git_reference.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cpp/exceptions.md"
+                "file": "git/git_reference.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cpp/exceptions.md",
+                "file": "git/git_reference.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -178,8 +178,8 @@
   },
   "active": "766d024e66f2aee2",
   "lastOpenFiles": [
-    "cpp/functions.md",
     "cpp/exceptions.md",
+    "cpp/functions.md",
     "cpp/switch-case.md",
     "python/exceptions.md",
     "git/git_reference.md",
