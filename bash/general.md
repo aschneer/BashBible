@@ -125,6 +125,17 @@ Writing to a file:
 echo "hello" > ./file.txt
 # Write to a file; append, don't overwrite.
 echo "hello" >> ./file.txt
+
+# Capture stdout to a file.
+command_to_run > output_file.txt
+# Capture stderr to a file.
+command_to_run 2> error_file.txt
+# Send stdout to the terminal, and both
+# stdout and stderr to a file.
+command_to_run | tee output_file.txt
+# Send stdout to the terminal, and
+# only stderr to a file.
+command_to_run 2>&1 | tee output_file.txt
 ```
 
 ---
