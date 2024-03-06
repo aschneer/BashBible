@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cpp/arrays.md",
+                "file": "bash/bashrc.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "7fd8af11453d7f68",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "git/git_reference.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -102,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cpp/arrays.md",
+                "file": "git/git_reference.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cpp/arrays.md"
+                "file": "git/git_reference.md"
               }
             }
           },
@@ -148,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cpp/arrays.md",
+                "file": "git/git_reference.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -176,8 +189,14 @@
       "file-tree-alternative:File Tree Alternative Plugin": false
     }
   },
-  "active": "766d024e66f2aee2",
+  "active": "7fd8af11453d7f68",
   "lastOpenFiles": [
+    "bash/bashrc.md",
+    "bash/file-system.md",
+    "bash/general.md",
+    "bash/argument-length-limits.md",
+    "git/git_reference.md",
+    "cpp/arrays.md",
     "cpp/strings.md",
     "cpp/tinyxml2_how-to-use.md",
     "cpp/templating.md",
@@ -185,10 +204,8 @@
     "cpp/std-optional.md",
     "cpp/switch-case.md",
     "cpp/useful-libraries.md",
-    "bash/general.md",
     "cpp/new-features.md",
     "cpp/pointers_references.md",
-    "git/git_reference.md",
     "cpp/exceptions.md",
     "cpp/functions.md",
     "python/exceptions.md",
@@ -199,11 +216,7 @@
     "python/unittest_command-line-args.md",
     "python/unittest_printing.md",
     "software.md",
-    "bash/file-system.md",
     "bash/functions.md",
-    "bash/_system-config-files.md",
-    "aws/s3-reference.md",
-    "windows/wsl.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "CodeRef_Logo_01_Crop1x1.png",

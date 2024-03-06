@@ -13,6 +13,13 @@ export PATH=$PATH:/home/andrew/bin/
 # and add all keys in ~/.ssh folder.
 eval "$(ssh-agent -s)"
 ssh-add -k ~/.ssh/*
+
+# Add paths to binaries and scripts to invoke by name.
+export PATH=$PATH:/home/andrew/.local/bin
+export PATH="$HOME/scripts:$PATH"
+
+# Shell safe rm tool.
+alias rm="$HOME/bin/shell-safe-rm-1.0.7/bin/rm.sh"
 ```
 
 Default Ubuntu 22.04 file:

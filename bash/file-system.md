@@ -15,7 +15,7 @@ df -h
 	# -h is human readable
 ```
 
-Listing files in directories:
+Listing files in directories (useless):
 
 ```bash
 # File list:
@@ -27,7 +27,7 @@ ls -Shla	# Same as above, but sort by largest files first.
 	# -a = include all files/folders, including hidden
 ```
 
-Disk usage:
+Disk usage (useful):
 
 ```bash
 # Get total disk usage of files and folders.

@@ -1,6 +1,7 @@
 # General
 
 ## Shebang
+
 Include at the top of any bash script file.
 
 ```bash
@@ -11,6 +12,7 @@ General Navigation / Interaction with Bash Shell
 
 ```bash
 history  # bash command history
+history -c # clear bash command history
 cat  # print file (all contents)
 less  # print file (scrollable)
 	/keyword  # search within less result

@@ -209,6 +209,7 @@ Visualizing commit tree:
 ```bash
 git log --graph --oneline --all
 
+# tig is the best tool for this.
 sudo apt install tig
 tig
 ```
