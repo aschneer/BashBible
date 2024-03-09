@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "git/git_reference.md",
+                "file": "bash/general.md",
                 "mode": "source",
                 "source": true
               }
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "git/git_reference.md",
+                "file": "bash/general.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "git/git_reference.md"
+                "file": "bash/general.md"
               }
             }
           },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "git/git_reference.md",
+                "file": "bash/general.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -191,11 +191,15 @@
   },
   "active": "7fd8af11453d7f68",
   "lastOpenFiles": [
+    "python/unittest_magicmock.md",
+    "js/functions.md",
+    "js/Pasted image 20240306130010.png",
+    "js/js-reference.md",
+    "git/git_reference.md",
     "bash/bashrc.md",
     "bash/file-system.md",
     "bash/general.md",
     "bash/argument-length-limits.md",
-    "git/git_reference.md",
     "cpp/arrays.md",
     "cpp/strings.md",
     "cpp/tinyxml2_how-to-use.md",
@@ -214,9 +218,6 @@
     "python/python_reference.md",
     "python/useful-stuff.md",
     "python/unittest_command-line-args.md",
-    "python/unittest_printing.md",
-    "software.md",
-    "bash/functions.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "CodeRef_Logo_01_Crop1x1.png",
@@ -237,7 +238,6 @@
     "CodeRef/linux-notes/dual-boot-with-windows/Ubuntu_UEFI_Install_230308_IMG_1253.jpg",
     "CodeRef/linux-notes/dual-boot-with-windows/Ubuntu_BootError_230308_IMG_1252.jpg",
     "CodeRef/linux-notes/dual-boot-with-windows/UbuntuDualBoot_NoGrub_WindowsFix_230308.png",
-    "CodeRef/CodeRef_Logo_01_Crop1x1.png",
-    "CodeRef/CodeRef_Logo_01.png"
+    "CodeRef/CodeRef_Logo_01_Crop1x1.png"
   ]
 }
