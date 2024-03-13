@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "bash/general.md",
+                "file": "python/classes.md",
                 "mode": "source",
                 "source": true
               }
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "bash/general.md",
+                "file": "python/classes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "bash/general.md"
+                "file": "python/classes.md"
               }
             }
           },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "bash/general.md",
+                "file": "python/classes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -172,7 +172,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 263.5
+    "width": 265.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -191,14 +191,20 @@
   },
   "active": "7fd8af11453d7f68",
   "lastOpenFiles": [
+    "python/python_reference.md",
+    "python/classes.md",
+    "git/git_reference.md",
+    "markdown/obsidian-reference.md",
+    "bash/_system-config-files.md",
+    "python/unittest_command-line-args.md",
+    "bash/file-syncing.md",
+    "bash/general.md",
     "python/unittest_magicmock.md",
     "js/functions.md",
     "js/Pasted image 20240306130010.png",
     "js/js-reference.md",
-    "git/git_reference.md",
     "bash/bashrc.md",
     "bash/file-system.md",
-    "bash/general.md",
     "bash/argument-length-limits.md",
     "cpp/arrays.md",
     "cpp/strings.md",
@@ -212,12 +218,6 @@
     "cpp/pointers_references.md",
     "cpp/exceptions.md",
     "cpp/functions.md",
-    "python/exceptions.md",
-    "git/removing-cherry-picks.md",
-    "python/operations.md",
-    "python/python_reference.md",
-    "python/useful-stuff.md",
-    "python/unittest_command-line-args.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "CodeRef_Logo_01_Crop1x1.png",
