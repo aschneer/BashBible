@@ -25,6 +25,9 @@ except ExceptionType3 as e:
 	# How to catch an exception, add a message to it,
 	# and throw it again.
 	raise ExceptionType3(f"Message about {some_variable}") from e
+except Exception as e:
+	# Catches any exception type that is derived from the
+	# `Exception` base class.
 except:
 	# Catch-all - handles any exception type.
 	# It will handle any exceptions leftover after
