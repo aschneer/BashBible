@@ -183,6 +183,16 @@ Comparing changes line-by-line:
 # List all commits and IDs
 git log
 
+# Find a specific commit
+git log 3a5ceg01 # abbreviated hash
+git log 4c5g1g91d891f2d691ee13a9d9096c3ecfc0fb0f # full hash
+
+# See git log history between two commits,
+# exclusive of the older one, inclusive of
+# the newer one.
+git log [older commit]..[newer commit]
+git log 3a5ceg01..a5c36e7g
+
 # Check your changes line-by-line with diff:
 	# Checks last commit against unstaged changes.
 	# If you do `git add .`, diff will show no changes.
@@ -212,4 +222,25 @@ git log --graph --oneline --all
 # tig is the best tool for this.
 sudo apt install tig
 tig
+```
+
+Git Bisect for triaging commits to find the root cause of a test failure:
+
+```bash
+# Binary search through commits between
+# a known pass and known failure, running
+# a test on each one to find the root cause.
+git bisect [help|start|bad|good|new|old|terms|skip|next|reset|visualize|view|replay|log|run]
+
+git bisect start # starts the process
+# Start by marking the first known bad commit.
+git bisect bad [commit hash]
+# Next mark the last known good commit.
+git bisect good [commit hash]
+# Then bisect will start the search and
+# checkout the first commit. Test the code, then:
+git bisect [good|bad] # then it will move to the next commit
+# When the process is complete, it will show
+# the first bad commit. Then to finish, run:
+git bisect reset
 ```
