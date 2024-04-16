@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "bash/general.md",
+                "file": "bash/resource-management.md",
                 "mode": "source",
                 "source": true
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "bash/general.md",
+                "file": "bash/resource-management.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "bash/general.md"
+                "file": "bash/resource-management.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "bash/general.md",
+                "file": "bash/resource-management.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -178,6 +178,8 @@
   },
   "active": "766d024e66f2aee2",
   "lastOpenFiles": [
+    "bash/general.md",
+    "bash/resource-management.md",
     "bash/file-system.md",
     "bash/text-operations.md",
     "software_engineering/uncle_bob_lectures/lesson-01_notes.md",
@@ -205,8 +207,6 @@
     "markdown/obsidian-reference.md",
     "bash/_system-config-files.md",
     "bash/file-syncing.md",
-    "bash/general.md",
-    "js/functions.md",
     "js/Pasted image 20240306130010.png",
     "Untitled 1.canvas",
     "Untitled.canvas",
