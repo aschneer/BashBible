@@ -26,3 +26,18 @@ Passing Pointers
 void increment(int &number) {
 }
 ```
+
+Constant Member Functions of a Class:
+
+From Codeium:
+
+> **Const Member Function**:
+>
+> * A const member function is a member function that is declared with the `const` keyword at the end of the function signature.
+> * It promises not to modify the state of the object on which it is called.
+> * Inside a const member function, you cannot modify non-mutable data members, call non-const member functions, or modify the object itself.
+> * It is a good practice to mark member functions as const if they do not modify the object's state.
+
+> Correct, the `const` keyword at the end of a member function declaration has no direct impact on whether the arguments passed to the function are modified.
+>
+> The `const` keyword at the end of a member function declaration specifically relates to the object on which the member function is called. It indicates that the member function does not modify the state of the object itself.

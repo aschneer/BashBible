@@ -99,4 +99,3 @@
   * [uncle\_bob\_lectures](software\_engineering/uncle\_bob\_lectures/README.md)
     * [Overview](software\_engineering/uncle\_bob\_lectures/\_overview.md)
     * [Lesson 01 - Notes](software\_engineering/uncle\_bob\_lectures/lesson-01\_notes.md)
-* [Test markdown page](test-markdown-page.md)
