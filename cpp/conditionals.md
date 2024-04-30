@@ -18,3 +18,5 @@ void PrintCowName(std::string name) {
 bool is_a_cow = true;
 PrintCowName(is_a_cow ? "tom" : "not_a_cow");
 ```
+
+## Other
