@@ -1,13 +1,22 @@
 # Functions
 
+## Default Parameters
+
+In a function with default parameters, the arguments are optional.
+
 ```cpp
-// Function with default parameters.
-// Arguments become optional.
 void myfunction(int a=5, int b=1) {
 }
 ```
 
-Function Overloading (Polymorphism)
+You can mix required and optional arguments, but the optional ones must come after the required ones.
+
+```cpp
+void myfunction(int a, int b=1) {
+}
+```
+
+## Function Overloading (Polymorphism)
 
 ```cpp
 // The function that matches the # arguments, and data types of

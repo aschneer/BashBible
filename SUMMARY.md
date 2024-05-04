@@ -51,7 +51,7 @@
   * [std-optional](cpp/std-optional.md)
   * [Raw String Literals](cpp/strings.md)
   * [Style Guide](cpp/style-guide.md)
-  * [switch-case](cpp/switch-case.md)
+  * [Switch Case](cpp/switch-case.md)
   * [Templating](cpp/templating.md)
   * [How to Use tinyxml2](cpp/tinyxml2\_how-to-use.md)
   * [Useful Libraries](cpp/useful-libraries.md)
