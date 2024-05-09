@@ -94,6 +94,8 @@
   * [Node Template](ros/node-template.md)
   * [Setup](ros/setup.md)
   * [urdf](ros/urdf.md)
+* [excel](excel/README.md)
+  * [excel-reference](excel/excel-reference.md)
 * [windows](windows/README.md)
   * [File System](windows/file-system.md)
   * [WSL - Windows Subsystem for Linux](windows/wsl.md)
