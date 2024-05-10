@@ -19,12 +19,12 @@ Listing files in directories (useless):
 
 ```bash
 # File list:
-ls -shla	# List files, include sizes, human readable.
-ls -Shla	# Same as above, but sort by largest files first.
-	# NOTE - -s and -S do not provide total size of directory contents,
-	#		only the directory itself (which is useless).
-	# -l = vertical list
-	# -a = include all files/folders, including hidden
+ls -shla    # List files, include sizes, human readable.
+ls -Shla    # Same as above, but sort by largest files first.
+    # NOTE - -s and -S do not provide total size of directory contents,
+    #		only the directory itself (which is useless).
+    # -l = vertical list
+    # -a = include all files/folders, including hidden
 ```
 
 Disk usage (useful):
@@ -56,8 +56,8 @@ Disk usage tree:
 ```bash
 # Package to view file/directory sizes.
 ncdu
-	# Scroll through directories and
-	# see disk usage in real time.
+    # Scroll through directories and
+    # see disk usage in real time.
 ```
 
 Recursive file list:
@@ -72,9 +72,9 @@ File search by substring in name, recursive:
 
 ```bash
 # Search files recursively by name (substring).
-	# "*substring*" asterisks are necessary to
-	# search for a substring.
-	# "-print" flag seems to be optional
+    # "*substring*" asterisks are necessary to
+    # search for a substring.
+    # "-print" flag seems to be optional
 find ./my_path/ -iname "*json*" <-print> # NOT case-sensitive
 find ./my_path/ -name "*json*" <-print> # case-sensitive
 
@@ -83,9 +83,9 @@ find ./my_path/ -iname "*myfile*" -and -iname "*.json*" # both
 find ./my_path/ -iname "*myfile*" -or -iname "*.json*" # either
 
 # Search contents of files recursively
-	# -r = recursive
-	# -i = non-case-sensitive
-	# -n = include line number of result within its file
+    # -r = recursive
+    # -i = non-case-sensitive
+    # -n = include line number of result within its file
 grep -rin "hello-world" # current directory
 grep -rin "hello-world" ./my_path
 grep -rin "hello-world" ./my_path/ # equivalent
@@ -95,9 +95,9 @@ grep -rin "hello-world" ./my_path/* # NOT equivalent, not sure why
 grep -o "term" file.txt
 
 # Show all context (entire text).
-	# 9999 is an example.
-	# It just needs to be a large number.
-	# 0 is supposed to work, but it didn't for me.
+    # 9999 is an example.
+    # It just needs to be a large number.
+    # 0 is supposed to work, but it didn't for me.
 grep -C 9999 "term" file.txt
 
 # Search for multiple search terms.
