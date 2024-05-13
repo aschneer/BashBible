@@ -58,6 +58,7 @@
   * [google-test](cpp/google-test.md)
   * [Conditionals](cpp/conditionals.md)
   * [Rule of Three/Five](cpp/rule-of-three-five.md)
+  * [Optional Parameters](cpp/optional-parameters.md)
 * [git](git/README.md)
   * [Code Review Dependency Strategy](git/code-review-dependency-strategy.md)
   * [Git Bisect Guide](git/git-bisect.md)
