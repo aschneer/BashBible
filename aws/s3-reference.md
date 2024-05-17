@@ -19,3 +19,18 @@ aws s3 sync s3://bucket_name/path/to/file /path/to/local/folder/
 # or
 aws s3 cp --recursive s3://bucket_name/path/to/file /path/to/local/folder/
 ```
+
+## Authentication
+
+Get current user information:
+
+```bash
+# aws cli
+aws sts get-caller-identity
+```
+
+List current authentication information and its sources:
+
+```bash
+aws configure list
+```
