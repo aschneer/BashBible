@@ -1,5 +1,7 @@
 # Optional Parameters
 
+## std::optional
+
 Declare optional parameter:
 
 ```cpp
@@ -38,4 +40,12 @@ Reset optional parameter to empty:
 opt_int.reset();
 // or
 opt_int = std::nullopt;
+```
+
+## Conditional / Ternary Operator
+
+```cpp
+// Calls `Process()` on member_ if member_ has
+// a value, otherwise returns false.
+return member_ ? member_.value().Process() : false;
 ```
