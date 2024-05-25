@@ -1,21 +1,19 @@
 # File System
 
-Dummy "null" file included in Linux distros:
+## Reserved Special Files
 
-```bash
-/dev/null
-```
+`/dev/null`: Dummy "null" file included in Linux distros
 
-Information about mounted disks:
+## Mounted Disks
 
 ```bash
 # Get file system information
 # for mounted disks only (disk space/usage, etc.):
 df -h
-	# -h is human readable
+    # -h is human readable
 ```
 
-Listing files in directories (useless):
+## Listing Files in Directories (useless):
 
 ```bash
 # File list:
@@ -27,31 +25,32 @@ ls -Shla    # Same as above, but sort by largest files first.
     # -a = include all files/folders, including hidden
 ```
 
-Disk usage (useful):
+## Disk Usage (useful):
 
-```bash
-# Get total disk usage of files and folders.
-du -shc ./* | sort -hr
-	# Get total disk usage of everything in current directory.
-	# -s = summary, don't list any subfolders or files.
-	# -h = human readable file sizes
-	# -c = return total size of each path
-	# --threshold or -t = exclude files below this size if positive,
-	#		exclude files above this size if negative.
-	# sort -hr
-	#		-h = human readable
-	#		-r = reverse order (largest to smallest)
-du -hca --threshold=100M ./* | sort -hr > result.txt
-	# -a = all files and directories
-		# Cannot use -s and -a at the same time
-	# --threshold or -t = exclude files below this size if positive,
-	#		exclude files above this size if negative.
-	#		Use this if the list is too long
-	# Save to text file result.txt if easier to look
-	# 		through result in text editor.
-```
+<pre class="language-bash"><code class="lang-bash"># Get total disk usage of files and folders.
+du -shcL ./* | sort -hr
+    # Get total disk usage of everything in current directory.
+    # -s = summary, don't list any subfolders or files.
+    # -h = human readable file sizes
+    # -c = return total size of each path
+    # --threshold or -t = exclude files below this size if positive,
+    #		exclude files above this size if negative.
+    # -L = dereferences symbolic links
+    # sort -hr
+    #		-h = human readable
+    #		-r = reverse order (largest to smallest)
+du -hcaL --threshold=100M ./* | sort -hr > result.txt
+    # -a = all files and directories
+<strong>        # Cannot use -s and -a at the same time
+</strong>    # --threshold or -t = exclude files below this size if positive,
+    #		exclude files above this size if negative.
+    #		Use this if the list is too long
+    # -L = dereferences symbolic links
+    # Save to text file result.txt if easier to look
+    # 		through result in text editor.
+</code></pre>
 
-Disk usage tree:
+## Disk Usage Tree:
 
 ```bash
 # Package to view file/directory sizes.
@@ -60,7 +59,7 @@ ncdu
     # see disk usage in real time.
 ```
 
-Recursive file list:
+## Recursive File List:
 
 ```bash
 # List all files within directory, including subdirectories:
@@ -68,7 +67,7 @@ find . -type f
 find ./ -type f
 ```
 
-File search by substring in name, recursive:
+## File Search by Substring in Name: Recursive:
 
 ```bash
 # Search files recursively by name (substring).
@@ -150,7 +149,8 @@ sudo umount /dev/sdxx
 
 ```bash
 # Format partition:
-mkfs.ext4 /dev/sda1	# Format partition to ext4. Replace sda1 with desired partition.
+# Format partition to ext4. Replace sda1 with desired partition.
+mkfs.ext4 /dev/sda1
 ```
 
 ```bash

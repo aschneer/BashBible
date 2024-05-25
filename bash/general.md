@@ -8,7 +8,7 @@ Include at the top of any bash script file.
 #!/bin/bash
 ```
 
-General Navigation / Interaction with Bash Shell
+## General Navigation / Interaction with Bash Shell
 
 ```bash
 history  # bash command history
@@ -23,6 +23,8 @@ printf [text]  # print specified text, highly customizable
 pwd  # print full path of current working directory
 ```
 
+## Deleting
+
 ```bash
 ### WARNING ### - be very careful with this
 # Delete directory (includes all files contained within):
@@ -30,26 +32,35 @@ rm -rf
 	# -r = recursive, -f = force
 ```
 
-Environment Variables
+### Shell-Safe RM
+
+[https://github.com/kaelzhang/shell-safe-rm](https://github.com/kaelzhang/shell-safe-rm)
+
+## Environment Variables
 
 ```bash
-export  # see all environment variables running
+env       # print all environment variables
+export    # see all environment variables running
 ```
 
----
+***
+
+## Variables
 
 ```bash
-# Variables:
-x=3		# No spaces between equal sign.
+x=3    # No spaces between equal sign.
 ```
 
+## Timing
+
 ```bash
-# Timing:
 sleep 5	# Delay 5 seconds.
 date +%s%3N # Get system time in milliseconds.
 ```
 
-Printing:
+## Printing
+
+### echo
 
 ```bash
 # echo Command:
@@ -61,6 +72,8 @@ echo -e "\n"	# Print newline character. -e enables interpretation of backslash e
 n=$'\n'; echo $n	# Store newline character to variable and use later.
 ```
 
+### printf
+
 ```bash
 # Printing:
 echo hello; echo "hello" # Same result.
@@ -70,7 +83,7 @@ printf "\033[5A"	# Jump up 5 lines in the print screen.
 printf "\033[5,4A"	# Jump up 5 lines and over 4 columns in the print screen. (I haven't tested this.)
 ```
 
-Reading from standard input:
+## Reading from Standard Input
 
 ```bash
 # Read from standard input (prompt for user input):
@@ -88,39 +101,62 @@ read -u 3	# read from file descriptor 2 instead of standard input.
 #	File descriptors 3, 4, .. 9 are for additional files.
 ```
 
-Reading from file:
+## Reading from File
+
+### Read Text File Line by Line
+
+#### Method 1
 
 ```bash
-# Read text file line by line:
-# Method 1:
 file=$(cat temp.txt)
 for line in $file
 do
-	echo -e "$line\n"
+    echo -e "$line\n"
 done
-# Method 2:
-#	File descriptor is created when file is opened, and stays open until closed.
-# IMPORTANT NOTE ABOUT FILE DESCRIPTORS:
-#	File descriptors 0, 1 and 2 are for stdin, stdout and stderr respectively.
-#	File descriptors 3, 4, .. 9 are for additional files.
-exec 3< file; # open file file as fd 3 (fd = file descriptor)
-echo "hello" > file	# write to file
-read -ur 3	# Reads 1 line and stores to $REPLY.
-read -ur line	# Reads 1 line and stores to $line.
-	# Keep running this, and it will read each line sequentially.
-	# Close file and re-open to start at the beginning again.
-	# -u = reads from file instead of stdin
-	# -r = ignores backslash escapes
-exec 3>&-	# Close file descriptor 3.
-# Method 3:
+```
+
+#### Method 2
+
+File descriptor is created when file is opened, and stays open until closed.
+
+**IMPORTANT NOTE ABOUT FILE DESCRIPTORS:**
+
+File descriptors `0`, `1` and `2` are for `stdin`, `stdout` and `stderr` respectively.
+
+File descriptors `3`, `4`, .. `9` are for additional files.
+
+```bash
+exec 3< file;        # open file file as fd 3 (fd = file descriptor)
+echo "hello" > file  # write to file
+read -ur 3           # Reads 1 line and stores to $REPLY.
+```
+
+Keep running this, and it will read each line sequentially.
+
+* `-u` = reads from file instead of stdin
+* `-r` = ignores backslash escapes
+
+```bash
+read -ur line        # Reads 1 line and stores to $line.
+```
+
+Close file and re-open to start at the beginning again.
+
+```bash
+exec 3>&-    # Close file descriptor 3.
+```
+
+#### Method 3
+
+```bash
 file="temp.txt"
 while read -r line
 do
-	echo -e "$line\n"
+    echo -e "$line\n"
 done <$file
 ```
 
-Writing to a file:
+## Writing to a File
 
 ```bash
 # Write to a file; overwrite everything.
@@ -140,22 +176,43 @@ command_to_run | tee output_file.txt
 command_to_run 2>&1 | tee output_file.txt
 ```
 
----
+***
 
-```bash
-# Start/stop a process.
-sudo systemctl start [process]
-sudo systemctl stop [process]
-```
-
-Bash Configuration
+## Bash Configuration
 
 ```bash
 # Add commands that execute every time Bash shell opens.
 echo "[commands]" >> ~/.bashrc
 ```
 
-Source Command
+### Aliases
+
+#### Set an Alias
+
+Calling the alias will call another command or series of commands.
+
+```bash
+# ~/.bashrc
+alias update="sudo apt update && sudo apt upgrade -y"
+```
+
+#### Override an Alias
+
+If an alias overloads an existing command name, there are ways to override the alias.
+
+```bash
+# ~/.bashrc
+alias ls="ls -la"
+```
+
+```bash
+\ls            # Option 1
+command ls     # Option 2
+/bin/ls        # Option 3, use full path to command
+/usr/bin/ls
+```
+
+## Source Command
 
 ```bash
 # Run file, and all variables created by it will be added to the current context.
@@ -166,7 +223,13 @@ source ./script.sh
 source ~/andrew/robotics/scripts/
 ```
 
-Process Management
+## Process Management
+
+```bash
+# Start/stop a process.
+sudo systemctl start [process]
+sudo systemctl stop [process]
+```
 
 ```bash
 top  # see processes currently running
