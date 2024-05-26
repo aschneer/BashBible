@@ -33,7 +33,7 @@
 
 * [DirectoryOpus](https://www.gpsoft.com.au/)
 * [OneCommander](https://onecommander.com/)
-* [Files](https://files.community/)
+* [Files](https://files.community/) | $8 in Microsoft store, free from website
 * [Total Commander](https://www.ghisler.com/)
 
 ### Others
