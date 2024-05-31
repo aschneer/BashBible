@@ -1,22 +1,32 @@
-# `.bashrc` File Contents
+# .bashrc File Contents
 
-Lines to add:
+## PATH
+
+When adding to `$PATH` in `~/.bashrc`, don't put the string in quotes.
+
+Putting it in quotes like `export PATH="$PATH:$HOME/bin"` will only add the specific directory to `$PATH`.
+
+Putting it NOT in quotes like `export PATH=$PATH:$HOME/bin` will include all subdirectories recursively.
+
+**Update:** This doesn't seem to always be true. Some terminal windows look recursively, some don't (with the same `$PATH` settings. I'm not sure why.
+
+## Lines to Add
 
 ```bash
 # Add ~/bin to PATH so bash will look
 # here to run binaries. If you type "my_program"
 # in bash, it will execute a binary called
 # "my_program" in any PATH location.
-export PATH=$PATH:/home/andrew/bin/
+export PATH=$PATH:$HOME/bin    # Concatenates with existing $PATH, `:` delimited
 
 # Start ssh-agent automatically on startup,
 # and add all keys in ~/.ssh folder.
 eval "$(ssh-agent -s)"
-ssh-add -k ~/.ssh/*
+ssh-add -k ~/.ssh/*.private    # Must name private keys with `.private` at the end.
 
 # Add paths to binaries and scripts to invoke by name.
-export PATH=$PATH:/home/andrew/.local/bin
-export PATH="$HOME/scripts:$PATH"
+export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/scripts
 
 # Shell safe rm tool.
 alias rm="$HOME/bin/shell-safe-rm-1.0.7/bin/rm.sh"

@@ -131,8 +131,8 @@ Discard all untracked files and changes, including any cherry-picked commits:
 
 This is how you can erase a cherry-pick you added to your branch for testing before the cherry-picked commit gets merged.
 
-- **Untracked:** Unknown to git, never been added with `git add`
-- **Unstaged:** Known to git, previously added with `git add`, but changed since then and changes not yet staged for next commit
+* **Untracked:** Unknown to git, never been added with `git add`
+* **Unstaged:** Known to git, previously added with `git add`, but changed since then and changes not yet staged for next commit
 
 ```bash
 git clean -d -f
@@ -154,11 +154,16 @@ git commit --amend -m "New and improved commit message"
 
 # Undo a `git commit --amend`
 git reset --soft HEAD@{1}
+
+# Show current commit info, with graph of
+# number of lines changed for each file.
+git show --stat
 ```
 
 Interactive Rebase:
-- Squash commits
-- Edit commit messages
+
+* Squash commits
+* Edit commit messages
 
 ```bash
 # Squash (combine) multiple commits
