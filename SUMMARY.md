@@ -1,7 +1,8 @@
 # Table of contents
 
 * [Hostname Ideas](README.md)
-* [Software](software.md)
+* [Software](software/README.md)
+  * [VSCode](software/vscode.md)
 * [Midjourney\_AI](midjourney\_ai/README.md)
   * [Midjourney Cheat Sheet](Midjourney\_AI/cheat-sheet.md)
 * [aws](aws/README.md)
