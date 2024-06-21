@@ -61,6 +61,7 @@
   * [Optional Parameters](cpp/optional-parameters.md)
   * [Keywords](cpp/keywords.md)
   * [Filesystem](cpp/filesystem.md)
+  * [Random](cpp/random.md)
 * [git](git/README.md)
   * [Code Review Dependency Strategy](git/code-review-dependency-strategy.md)
   * [Git Bisect Guide](git/git-bisect.md)

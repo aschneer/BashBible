@@ -249,3 +249,19 @@ glances
 sysbench
 Geekbench
 ```
+
+## Grep
+
+### Search for Invisible Control Characters
+
+Note - control characters might not render at all, or they might render inconsistently.
+
+```bash
+grep -a $'\xff' # search for character '\xff'
+```
+
+Create a dummy test file with control characters to make sure search works.
+
+```bash
+echo $'\xff' > test.txt
+```
