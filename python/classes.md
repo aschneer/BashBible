@@ -2,21 +2,53 @@
 
 ## Reference Table
 
-|                                             | No Instance / Class Level               | With Instance / Instance Level                      |
-| ------------------------------------------- | --------------------------------------- | --------------------------------------------------- |
-| Prefix Convention                           | `cls`                                   | `self`                                              |
-| Define Variable                             | `cls.var1 = 0`                          | `self.var1 = 0`                                     |
-| Define Method                               | `@classmethod` `def class_method(cls):` | `def method(self):`                                 |
-| Access Class Attribute from Outside Class   | `MyClass.var1 = 3`                      | `a = MyClass()` `a.var1 = 3`, or `MyClass.var1 = 3` |
-| Access Class Attribute from Inside Class    | `cls.var1 = 3` or `MyClass.var1 = 3`    | `cls.var1 = 3` or `MyClass.var1 = 3`                |
-| Access Instance Variable from Outside Class | Not possible                            | `a = MyClass()` `a.var1 = 3`                        |
-| Access Instance Variable from Inside Class  | Not possible                            | `self.var1 = 3`                                     |
-| Call Class Method from Outside Class        | `MyClass.method()`                      | `a = MyClass(); a.method()` or `MyClass.method()`   |
-| Call Class Method from Inside Class         | `cls.method()` or `MyClass.method()`    | `cls.method()` or `MyClass.method()`                |
-| Call Regular Method from Outside Class      | Not possible                            | `a = MyClass()` `a.method()`                        |
-| Call Regular Method from Inside Class       | Not possible                            | `self.method()`                                     |
+|                                             | No Instance / Class Level                                                                                                                                                       | With Instance / Instance Level                                                                                                                                                                                                                                                                                                                                                               |
+| ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Prefix Convention                           | `cls`                                                                                                                                                                           | `self`                                                                                                                                                                                                                                                                                                                                                                                       |
+| Define Variable                             | `cls.var1 = 0`                                                                                                                                                                  | `self.var1 = 0`                                                                                                                                                                                                                                                                                                                                                                              |
+| Define Method                               | <pre class="language-python"><code class="lang-python">@classmethod
+def cls_method(cls):
+</code></pre>                                                                          | <pre class="language-python"><code class="lang-python">def inst_method(self):
+</code></pre>                                                                                                                                                                                                                                                                                                  |
+| Access Class Attribute from Outside Class   | <pre class="language-python"><code class="lang-python">MyClass.var1 = 3
+</code></pre>                                                                                           | <pre class="language-python"><code class="lang-python">a = MyClass()
+a.var1 = 3
+</code></pre><p>or</p><pre class="language-python"><code class="lang-python">MyClass.var1 = 3
+</code></pre>                                                                                                                                                                                                  |
+| Access Class Attribute from Inside Class    | <pre class="language-python"><code class="lang-python">cls.var1 = 3
+</code></pre><p>or</p><pre class="language-python"><code class="lang-python">MyClass.var1 = 3
+</code></pre> | <pre class="language-python"><code class="lang-python"><strong>cls.var1 = 3
+</strong></code></pre><p>or</p><pre class="language-python"><code class="lang-python">MyClass.var1 = 3
+</code></pre><p>or</p><pre class="language-python"><code class="lang-python">type(self).var1 = 3
+</code></pre><p>or</p><pre class="language-python"><code class="lang-python">self.var1 = 3
+</code></pre> |
+| Access Instance Variable from Outside Class | Not possible                                                                                                                                                                    | <pre class="language-python"><code class="lang-python">a = MyClass()
+a.var1 = 3
+</code></pre>                                                                                                                                                                                                                                                                                                |
+| Access Instance Variable from Inside Class  | Not possible                                                                                                                                                                    | <pre class="language-python"><code class="lang-python">self.var1 = 3
+</code></pre>                                                                                                                                                                                                                                                                                                           |
+| Call Class Method from Outside Class        | <pre class="language-python"><code class="lang-python">MyClass.method()
+</code></pre>                                                                                           | <pre class="language-python"><code class="lang-python">a = MyClass()
+a.method()
+</code></pre><p>or</p><pre class="language-python"><code class="lang-python">MyClass.method()
+</code></pre>                                                                                                                                                                                                  |
+| Call Class Method from Inside Class         | <pre class="language-python"><code class="lang-python">cls.method()
+</code></pre><p>or</p><pre class="language-python"><code class="lang-python">MyClass.method()
+</code></pre> | <pre class="language-python"><code class="lang-python">cls.method()
+</code></pre><p>or</p><pre class="language-python"><code class="lang-python">MyClass.method()
+</code></pre><p>or</p><pre class="language-python"><code class="lang-python">type(self).method()
+</code></pre><p>or</p><pre class="language-python"><code class="lang-python">self.method()
+</code></pre>                  |
+| Call Regular Method from Outside Class      | Not possible                                                                                                                                                                    | <pre class="language-python"><code class="lang-python">a = MyClass()
+a.method()
+</code></pre>                                                                                                                                                                                                                                                                                                |
+| Call Regular Method from Inside Class       | Not possible                                                                                                                                                                    | `self.method()`                                                                                                                                                                                                                                                                                                                                                                              |
 
-Define a class:
+From Codeium:
+
+When you access an attribute with `self`, Python first looks for it in the instance's namespace. If it doesn't find it there, it then checks in the class namespace (and subsequently in the namespaces of its base classes, if any).
+
+## Define a Class
 
 ```python
 class MyClass:
