@@ -4,19 +4,19 @@
 
 Where VSCode stores settings JSON files (on Windows):
 
-User:
+### User
 
 ```bash
-C:\Users\username\AppData\Roaming\Code\User\settings.json
+C:\Users\<username>\AppData\Roaming\Code\User\settings.json
 ```
 
-Remote:
+### Remote
 
 ```bash
-C:\Users\username\.vscode-server\data\Machine\settings.json
+\\wsl.localhost\<wsl-distro>\home\<username>\.vscode-server\data\Machine\settings.json
 ```
 
-Workspace:
+### Workspace
 
 ```bash
 ...repo\.vscode\settings.json
