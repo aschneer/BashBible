@@ -19,6 +19,16 @@ Top choice tech stacks to try:
   * Gatsby + Netlify + Ant Design, Radix, shadcn, NextUI
   * Copy/paste off-the-shelf UI components into site design
 
+## Tech Stack for Dynamic/Interactive Apps
+
+* `Node.js` / `npm` - package manager
+* `vite` - build manager and dev server with hot reloads (like `hugo server`)
+* `react` - most popular dynamic app javascript framework
+* `shadcn` - off-the-shelf UI components for react
+* `gatsby` - static site generator for react apps
+* `cypress` - unit and end-to-end testing for web apps
+* `netlify` - static site host/CDN
+
 ## JAM Stack
 
 [https://jamstack.org/](https://jamstack.org/)
@@ -56,8 +66,8 @@ Top choice tech stacks to try:
     * **Bootstrap** (try others before this, others seem nicer)
   * On top of React
     * **Ant Design**
-    * **Radix**
     * **shadcn**
+    * **Radix**
     * **NextUI**
 
 ## CSS Utility Classes
@@ -73,16 +83,17 @@ Top choice tech stacks to try:
 
 ### React Based
 
-* :star: **Ant Design** | [https://ant.design/](https://ant.design/)
-* :star: **Radix** | [https://www.radix-ui.com/](https://www.radix-ui.com/)
-  * Focus on accessibility
 * :star: **shadcn** | [https://ui.shadcn.com/](https://ui.shadcn.com/)
   * Tailwind based
+  * Radix based, which has great accessibility
   * Copy and paste code directly into your codebase, component by component
   * No package to install
+* :star: **Radix** | [https://www.radix-ui.com/](https://www.radix-ui.com/)
+  * Focus on accessibility
 * :star: **NextUI** | [https://nextui.org/](https://nextui.org/)
   * Beautiful components
   * Figma integration
+* :star: **Ant Design** | [https://ant.design/](https://ant.design/)
 * **Aceternity UI** | [https://ui.aceternity.com/](https://ui.aceternity.com/)
   * Super fancy 3D animation components
 * **chakra** | [https://v2.chakra-ui.com/](https://v2.chakra-ui.com/)
@@ -93,10 +104,12 @@ Top choice tech stacks to try:
 * **Blueprint JS** | [https://blueprintjs.com/](https://blueprintjs.com/)
 * **PrimeReact** | [https://primereact.org/](https://primereact.org/)
 * **Evergreen** | [https://evergreen.segment.com/](https://evergreen.segment.com/)
+* **HeadlessUI** | [https://headlessui.com/](https://headlessui.com/)
+  * Unstyled, fully accessible UI components for React/Vue
 
 ### Non-React Based
 
-These are good candidates for Hugo since they don't require React.
+These could be good candidates for Hugo since they don't require React.
 
 * :star: **Bulma** | [https://bulma.io/](https://bulma.io/)
   * Looks awesome
@@ -114,13 +127,18 @@ These are good candidates for Hugo since they don't require React.
   * Just add css and js files to project
 * **Tachyons** | [https://tachyons.io/](https://tachyons.io/)
   * Pure CSS
+* **Alpine.js** | [https://alpinejs.dev/](https://alpinejs.dev/)
+  * Compose reactive behavior directly in markup (HTML)
+  * Just import Alpine via `<script>` tag
 
 ### Tailwind Based, Non-React
 
-These are good candidates for Hugo since they don't require React.
+These could be good candidates for Hugo since they don't require React.
 
 * :star: **daisyUI** | [https://daisyui.com/](https://daisyui.com/)
   * Looks incredible, top choice to try
+  * But a YouTuber said the UI components have very poor accessibility (UX stuff, like not maintaining focus on a popup, things scrolling behind popups, etc.)
+  * In the comments people said the accessibility issues were fixed, and that reactive behavior is not part of the scope of daisyUI
 * :star: **Mamba UI** | [https://mambaui.com/](https://mambaui.com/)
 * :star: **HyperUI** | [https://www.hyperui.dev/](https://www.hyperui.dev/)
 * **Tailwind UI** | [https://tailwindui.com/](https://tailwindui.com/)

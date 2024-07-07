@@ -91,6 +91,8 @@
   * [unittest\_mock](python/unittest\_magicmock-1.md)
   * [unittest Library - Printing](python/unittest\_printing.md)
   * [useful-stuff](python/useful-stuff.md)
+  * [jupyter](python/jupyter.md)
+  * [poetry](python/poetry.md)
 * [ros](ros/README.md)
   * [\_ROS Cheat Sheet](ros/\_ros-cheat-sheet.md)
   * [Create New Workspace](ros/create-new-workspace.md)
