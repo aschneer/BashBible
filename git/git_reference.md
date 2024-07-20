@@ -1,20 +1,34 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Git Reference
 
 ## Branches
 
 You can have any branch structure you want. Branches are stored in a directory structure. The files of the repo exist in the folder for a given branch.
 
-In this example, `my_fancy_branch` is a branch in a folder called `andy`, which is in a folder called `unreviewed`. This structure organizes branches by their purpose. Any branch can be merged into any other branch regardless of this folder structure; it's just a way of organizing branches.
+In this example, `my_fancy_branch` is a branch in a folder called `andy`, which is in a folder called `experimental`. This structure organizes branches by their purpose. Any branch can be merged into any other branch regardless of this folder structure; it's just a way of organizing branches.
 
 ```txt
 my_repo/
-├── unreviewed/
+├── experimental/
 │   └── andy/
 │      └── my_fancy_branch/
 └── ...
 ```
 
-Git has special namespaces for specific purposes. The following is for unreviewed code branches.
+Gerrit has special namespaces for specific purposes. The following is for pushing branches for code review.
 
 ```bash
 my_repo/refs/for/
@@ -24,77 +38,123 @@ Under this, you would put your branch according to whatever folder structure you
 
 ```bash
 my_repo/refs/for/
-├── unreviewed/andrew.schneer/my_fancy_branch
+├── experimental/my.name/my_fancy_branch
 ```
 
-Working with branches:
+### Working with Branches
 
 ```bash
 # Current latest local commit.
 HEAD
 # Current latest remote commit.
 origin/HEAD
+```
 
-# Push the HEAD to a branch called "my_fancy_branch"
-# in the git namespace "refs/for/" in the branch
-# directory "unreviewed/andy/".
-git push origin HEAD:refs/for/unreviewed/andy/my_fancy_branch
-# This will trigger code review
-git push origin HEAD:refs/for/master
+List all branches:
 
-# Pull latest master and rebase your
-# local master on top of it.
-git pull --rebase
-# Rebase new feature branch onto master
-git rebase master new_feature
-	# Alternatively:
-	git checkout new_feature
-	git rebase master
-
-# Push from specific local branch
-# to specific remote branch.
-git push [remote] [local branch]:[remote branch]
-git push origin local_branch:remote_branch
-
-# List all branches.
+```bash
 git branch
-# Create a new branch as a copy of the current branch.
+```
+
+Create a new branch as a copy of the current branch:
+
+```bash
+# Just create it
 git branch branch_name
-# Move to a different branch.
+
+# Switch to it at the same time
+git switch -c new_branch_name
+```
+
+Move to a different branch:
+
+```bash
 git checkout branch_name
-# Delete a branch.
+```
+
+Delete a branch:
+
+```bash
 git branch -d branch_name
 git branch -D branch_name # Ignore warnings.
+```
 
-# Rename a branch.
+Rename a branch:
+
+```bash
 git branch -m <old_branch_name> <new_branch_name>
+```
 
-# Get a clean origin/master in detached head state
+Get local copy of a remote branch:
+
+```bash
+# Detached head state
 git checkout origin/master
-# Save it to a new branch
-git switch -c new_branch_name
+git checkout origin/releases/2024.7.19
 
-# Duplicate current branch
-# to new branch and checkout the new branch.
-git switch -c new_branch_name
+# Tracking remote branch
+git checkout master
+git checkout releases/2024.7.19
+```
 
-# Duplicate an existing branch
-# and checkout the new branch copy.
+Duplicate an existing branch and checkout the new branch copy:
+
+```bash
 git switch -c feature/branch2 feature/branch1
 git checkout -b feature/branch2 feature/branch1
-
-# Create a new branch from the current branch
-# starting at a specific commit.
-git checkout -b new-branch-name <commit-hash>
-
-# Get branch releases/2023.1.1 in detached head state
-git checkout origin/releases/2023.1.1
-
-# Get remote branch releases/2023.1.1, and create a
-# matching local branch to track the remote branch
-# (i.e. NOT detached HEAD state).
-git checkout releases/2023.1.1 # leave out "origin" (remote name)
 ```
+
+Create a new branch from the current branch starting at a specific commit:
+
+```bash
+git checkout -b new-branch-name <commit-hash>
+```
+
+### Pushing to Remote Branches
+
+```bash
+# Push the HEAD to a branch called "my_fancy_branch"
+# in the git namespace "my/namespace/" in the branch
+# directory "experimental/andy/".
+git push origin HEAD:my/namespace/experimental/andy/my_fancy_branch
+# Or push to master branch in "my/namespace/"
+git push origin HEAD:my/namespace/master
+```
+
+Push from specific local branch to specific remote branch:
+
+```bash
+git push [remote] [local branch]:[remote branch]
+git push origin local_branch:remote_branch
+```
+
+### Rebasing
+
+Pull latest master and rebase your local master on top of it.
+
+```bash
+git pull --rebase
+```
+
+Rebase a new feature branch onto master:
+
+```bash
+git checkout new_feature
+git rebase master
+
+# or
+
+git rebase master new_feature
+```
+
+Rebase onto a remote branch:
+
+```bash
+git checkout new_feature
+git rebase origin/master
+```
+
+### Pull
 
 Alternate way to pull down a remote branch:
 
@@ -112,18 +172,42 @@ git restore path/to/file
 git checkout -- path/to/file
 ```
 
-Delete all local changes to a specific file in a commit:
+Move all committed changes back to staging area (keep them staged and tracked, but not committed):
 
 ```bash
-# Move all committed changes back to staging area
-# (tracked, but not committed).
 git reset --soft HEAD~1
-# Unstage/untrack the specific file.
+```
+
+Unstage files, but keep them tracked:
+
+```bash
+git reset --soft HEAD~
+
+# Then untrack them if desired...
+
+git reset
+```
+
+Unstage and untrack files at once:
+
+```bash
+# All files
+git reset HEAD
+git restore --staged . # equivalent
+git reset <commit_hash> # equivalent
+
+# Specific file
 git reset HEAD <file>
-# Revert all unstaged changes.
+git restore --staged <file> # equivalent
+```
+
+Revert all unstaged changes:
+
+```bash
 git restore . # Confirmed this works
 
 # or...
+
 git checkout . # Not tested
 ```
 
@@ -138,7 +222,7 @@ This is how you can erase a cherry-pick you added to your branch for testing bef
 git clean -d -f
 ```
 
-Working with commits:
+## Working with Commits
 
 ```bash
 # Edit current commit:
@@ -151,9 +235,6 @@ git commit --amend -m "New and improved commit message"
 
 # To edit a previous commit message, use
 # interactive rebase with option 'r' (reword).
-
-# Undo a `git commit --amend`
-git reset --soft HEAD@{1}
 
 # Show current commit info, with graph of
 # number of lines changed for each file.
@@ -248,4 +329,84 @@ git bisect [good|bad] # then it will move to the next commit
 # When the process is complete, it will show
 # the first bad commit. Then to finish, run:
 git bisect reset
+```
+
+### Split Large Commit into Smaller Commits
+
+#### Commit with Changes to Existing Files
+
+This method uses `git add -p` to selectively stage hunks of each file and commit them separately.
+
+```bash
+git checkout branch_with_large_commit
+git reset --soft HEAD~ # or HEAD~1, HEAD^, HEAD^1
+
+# Changes will now be staged but uncommitted
+
+git reset # sends back to tracked but unstaged
+git add -p <file> # and go hunk by hunk
+# Use "s" command in `git add -p` to split up hunks further
+```
+
+{% hint style="info" %}
+Another command that is similar to `git add -p` is `git add -i` (interactive).
+{% endhint %}
+
+If the large commit contains new files, the above method won't work. When you reset changes from the staging area, instead of going to tracked but unstaged, they will go to fully untracked.
+
+There is no way to get them to be tracked but unstaged, so git never sees them as "changes" and will not let you do `git add -p`. It will just say "no changes" when you try.
+
+#### Commit with New Files
+
+Instead, we create a new branch for our new commit chain. Then we reach over to the branch with the large commit and pull in hunks of changes one at a time.
+
+```bash
+git checkout master
+git switch -c new_branch
+# Grab files one at a time from large commit.
+git checkout large_commit_branch -p -- path/to/file
+```
+
+Select `y` to add the hunk, or `e` to edit it in place (break it up further).
+
+Instead of using `e`, you can also use `y` to add the whole thing, then go into the file manually, delete parts you don't want, and `git add .` to stage those deletions.
+
+You don't really need to use `checkout -p` at all in this case. You can just do all the hunk selection from the text editor directly.
+
+```bash
+git checkout large_commit_branch -- path/to/file
+# edit files in text editor.
+git add .
+git commit -m "message"
+```
+
+Another alternate method is to try going in the other direction; unstaging hunks of changes that you want to remove from the large commit.
+
+```bash
+git checkout branch_with_large_commit
+git reset -p <file>
+```
+
+## Reflog
+
+This is git's undo history.
+
+```bash
+git reflog
+```
+
+Command history will be listed in reverse chronological order.
+
+To go back to a previous state, find the HEAD pointer number corresponding to the desired state. The form will be `HEAD@{1}`, `HEAD@{2}`, etc. chronologically through the history.
+
+Use git reset to go back to that state.
+
+```bash
+git reset HEAD@{x} # x = place in reflog to revert to
+```
+
+Example: undo the last `git commit --amend`:
+
+```bash
+git reset --soft HEAD@{1}
 ```
