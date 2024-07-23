@@ -241,10 +241,21 @@ git commit --amend -m "New and improved commit message"
 git show --stat
 ```
 
-Interactive Rebase:
+### Interactive Rebase
+
+Useful for:
 
 * Squash commits
 * Edit commit messages
+* Edit individual commits in a chain of commits
+
+It is important to understand how an interactive rebase works.
+
+The way it works is it goes back in the commit history to where you tell it to start. From that point, it rebuilds each commit in the chain one at a time with the staged changes at each step.
+
+It follows the basic workflow:
+
+**Stage Changes -> Commit -> Move to next commit**
 
 ```bash
 # Squash (combine) multiple commits
@@ -263,7 +274,37 @@ git commit --fixup HEAD~1
 git rebase -i --autosquash HEAD~5
 ```
 
-Comparing changes line-by-line:
+#### Edit a Specific Commit in a Chain
+
+To edit a specific commit in a chain without affecting the other commits, do as follows:
+
+```bash
+tig # look at commit history, decide where to start rebase
+git rebase -i HEAD~x # "x" is number of commits back to start
+```
+
+Make changes to the commit chosen. When changes are made:
+
+```bash
+git add .
+git commit --amend
+git rebase --continue
+```
+
+**IMPORTANT:** If merge conflicts are found:
+
+1. Resolve them
+2. Run `git rebase --continue`
+
+{% hint style="warning" %}
+**DO NOT** `git commit --amend` after resolving merge conflicts. Resolving (in VSCode) will automatically stage the conflict fixes. Keep the fixes in the staging area.
+
+Amending the conflict fixes will combine them with the current commit in the rebase process, not the commit that caused the conflict. The effect will be that commits will be squashed and will disappear from the chain.
+
+Simply fix each merge conflict, then run `git rebase --continue`.
+{% endhint %}
+
+## Comparing changes line-by-line
 
 ```bash
 # List all commits and IDs
