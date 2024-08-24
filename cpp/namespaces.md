@@ -36,13 +36,25 @@ ParentNameClass parent_instance;
 }
 ```
 
+From [StackOverflow](https://stackoverflow.com/a/42152196):
+
+> Simplified basic C++ namespace rules are:
+>
+> * You can access anything in parent namespace path without specifying namespace.
+> * You can access anything in child namespace path by specifying only relative path.
+> * Everything else requires full namespace specifications.
+
 ## "using" Keyword
+
+Bring in a specific object from a different namespace, so you can refer to it directly.
 
 ```cpp
 using my::space::MyClass;
 // You can now refer to MyClass directly by name
 // instead of using the full namespace prefix.
 ```
+
+Bring in an entire namespace.
 
 ```cpp
 using namespace std;

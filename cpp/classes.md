@@ -154,3 +154,58 @@ TEST_F(MyTestFixture, MyTestCase) {
 }
 ```
 {% endcode %}
+
+## Abstract Interface Class
+
+An abstract interface class is a purely virtual base class that just defines the public interface (public types, and public methods).
+
+Concrete classes would inherit from the abstract interface class and contain all the implementation.
+
+This architecture has benefits:
+
+* Makes it possible to mock the class in tests
+* Clearly defines the public interface / contract
+* Keeps interface separate from implementation
+
+In Java, it is very common to always have an abstract interface class for every class.
+
+**Abstract Interface Class:**
+
+* Should contain only virtual public methods.
+* All virtual public methods must be set equal to zero. This tells the compiler that they will not be implemented in the base class. This prevents instances of it being created.
+* Must contain a virtual destructor equal to default.
+
+```cpp
+class IMyClass {
+public:
+    struct MyStruct {
+        int dog;
+        int cat;
+    };
+
+    virtual ~IMyClass() = default;
+    
+    virtual void Method1(int a, int b) = 0;
+    
+    virtual int Method2(int a, int b) = 0;
+};
+```
+
+**Concrete Implementation Class:**
+
+```cpp
+class MyClass : public IMyClass {
+    MyClass() = default;
+    ~MyClass() override {}
+    
+    void Method1(int a, int b) override {}
+    
+    int Method2(int a, int b) override {}
+};
+```
+
+The type used for storing an instance, or passing an instance through function arguments or returns should always be the abstract interface class `IMyClass`.
+
+When you create an instance of the class to use, it should always be an instance of the concrete implementation class, `MyClass`.
+
+Because `MyClass` inherits from `IMyClass`, the `MyClass` instance can be stored or passed anywhere as a `IMyClass` type. The types are compatible.

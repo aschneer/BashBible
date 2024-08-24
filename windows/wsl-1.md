@@ -17,6 +17,10 @@ detail vdisk
 compact vdisk    # Reclaims unused space
 ```
 
+{% hint style="info" %}
+**TIP:** If the `compact vdisk` command seems to be hung up for a long time with no progress (ex. at 12%), hit **Enter.**
+{% endhint %}
+
 ### Option 2
 
 ```powershell
