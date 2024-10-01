@@ -69,6 +69,7 @@
   * [Git Reference](git/git\_reference.md)
   * [removing-cherry-picks](git/removing-cherry-picks.md)
   * [Useful Tools](git/useful-tools.md)
+  * [Graphite Reference](git/graphite-reference.md)
 * [js](js/README.md)
   * [functions](js/functions.md)
   * [Javascript Reference](js/js-reference.md)
