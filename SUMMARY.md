@@ -118,3 +118,5 @@
 * [web](web/README.md)
   * [Front End](web/front-end.md)
   * [Hugo](web/hugo.md)
+* [sql](sql/README.md)
+  * [cheatsheet](sql/cheatsheet.md)
