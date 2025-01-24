@@ -17,6 +17,12 @@ detail vdisk
 compact vdisk    # Reclaims unused space
 ```
 
+The path for a WSL vdisk is usually:
+
+`"C:\Users\user.name\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu22.04LTS_79rhkp1fndgsc\LocalState\ext4.vhdx"`
+
+(replace with appropriate linux distro name and ID)
+
 {% hint style="info" %}
 **TIP:** If the `compact vdisk` command seems to be hung up for a long time with no progress (ex. at 12%), hit **Enter.**
 {% endhint %}
